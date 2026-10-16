@@ -39,6 +39,12 @@ console.log('funções: ok');
   const r = await importarRelatorio(db, real);
   assert.equal(r.novasNoticias.length, 3, 'a notícia derrubada pela comunidade não volta');
   assert.ok(store.has('runs/2026-10-16-importado'));
+  // combo com fonte antiga entra como "a verificar"; com fonte pós-patch, como "fonte"
+  const r2 = await importarRelatorio(db, { schema: 'combotrialz/report@1', checkedAt: '2026-10-16T12:00:00-03:00', proposals: [
+    { type: 'new_combo', combo: { characterId: 'ryu', controls: 'modern', notation: '2L, 5L > SP+M' }, sources: [{ url: 'https://ex.com/velho', publishedAt: '2025-06-01' }] },
+    { type: 'new_combo', combo: { characterId: 'ryu', controls: 'modern', notation: '5H > SP+H' }, sources: [{ url: 'https://ex.com/novo', publishedAt: '2026-10-14' }] } ], news: [] });
+  const st = r2.novosCombos.map(c => c.status).sort();
+  assert.deepEqual(st, ['a_verificar', 'fonte']);
   console.log('import do relatório: ok');
 }
 

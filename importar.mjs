@@ -108,6 +108,9 @@ function recursos(e) {
 
 // ---------- aplicar propostas (vn/hn/mn no app) ----------
 const rotuloPatch = meta => ({ label: `v${meta.balancePatch.version.split(' ')[0]} (${meta.balancePatch.date.split('-').reverse().join('/')})`, date: meta.balancePatch.date });
+// Fonte publicada antes do patch atual (ou sem data) não prova que o combo funciona hoje:
+// o combo entra como "a_verificar" (no app: "A verificar", conta como "N?" no card do personagem).
+const temFontePosPatch = (e, dataPatch) => (e.sources || []).some(f => f.publishedAt && dataPatch && f.publishedAt >= dataPatch);
 function novoCombo(e, patch, agora) {
   const r = e.combo, calc = recursos(r.notation), daFonte = r.drive != null || r.superBars != null, avisos = [...(calc.warnings ?? [])];
   if (daFonte && r.drive != null && r.drive !== calc.drive) avisos.push(`A fonte diz ${r.drive} barras de Drive; a notação soma ${calc.drive}.`);
@@ -117,7 +120,8 @@ function novoCombo(e, patch, agora) {
     damageOrigin: r.damage == null ? null : 'fonte',
     resources: { drive: r.drive ?? calc.drive, superBars: r.superBars ?? calc.superBars, supers: r.supers && r.supers.length ? r.supers : calc.supers,
       ca: r.ca || calc.ca, extra: r.extra ?? null, origin: daFonte ? 'fonte' : 'calculado', warnings: avisos },
-    endsWith: r.endsWith ?? null, difficulty: r.difficulty ?? null, status: 'fonte', patch, sources: e.sources, notes: e.notes || null,
+    endsWith: r.endsWith ?? null, difficulty: r.difficulty ?? null, status: temFontePosPatch(e, patch.date) ? 'fonte' : 'a_verificar',
+    patch: temFontePosPatch(e, patch.date) ? patch : null, sources: e.sources, notes: e.notes || null,
     fingerprint: id, verificationCount: 0, createdAt: agora, updatedAt: agora };
 }
 function aplicarUma(e, combos, meta, agora) {
