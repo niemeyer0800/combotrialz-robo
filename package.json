@@ -1,0 +1,14 @@
+{
+  "name": "combotrialz-robo",
+  "private": true,
+  "type": "module",
+  "description": "Busca notícias, confere vídeos do YouTube e manda push do ComboTrialz (roda no GitHub Actions).",
+  "scripts": {
+    "start": "node robo.mjs",
+    "test": "node teste.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "firebase-admin": "^14.5.0"
+  }
+}
