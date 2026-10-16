@@ -4,7 +4,10 @@
 //   1. verifica as notícias "pendente" com mais de 5 min (Gemini + Google Search) e publica ou descarta;
 //   2. a cada 30 min, pesquisa notícias novas e grava como "pendente";
 //   3. confere os canais do YouTube cadastrados (ytCanais) e acha vídeos novos;
-//   4. manda push para os aparelhos em pushTokens (notícias publicadas e vídeos novos).
+//   4. importa os relatórios de combos do Claude que chegarem em relatorios/*.json;
+//   5. grava estado/estado.json (o que já existe na base) para a pesquisa do Claude não repetir;
+//   6. manda push para os aparelhos em pushTokens (notícias, combos e vídeos novos).
+// As notícias publicadas entram direto na coleção "news" (aba Cenário do app).
 //
 // Segredos (GitHub → Settings → Secrets and variables → Actions):
 //   GEMINI_API_KEY            chave do Gemini (AI Studio)
@@ -16,6 +19,8 @@ import crypto from 'node:crypto';
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import { getMessaging } from 'firebase-admin/messaging';
+import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
+import { importarRelatorio, idNoticiaUrl, dominio as dominioNoticia, TIPOS_NOTICIA } from './importar.mjs';
 
 const MODELO = process.env.GEMINI_MODELO || 'gemini-2.5-flash';
 const RESERVAS = ['gemini-2.5-flash', 'gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.5-flash-lite'];
@@ -48,7 +53,8 @@ Regras:
 - A data é a da publicação ORIGINAL da notícia, não a data em que alguém repostou.
 - Escreva em português do Brasil.
 - Responda SOMENTE com linhas neste formato, uma notícia por linha, sem nada antes ou depois:
-NOTICIA|AAAA-MM-DD|Título curto|Resumo em uma ou duas frases
+NOTICIA|AAAA-MM-DD|tipo|Título curto|Resumo em uma ou duas frases
+  (tipo é um destes: torneio, patch, personagem, combo, cenario, comunidade)
 - Se não encontrar nada novo, responda apenas: NENHUMA`;
 }
 function promptVerificacaoLote(hoje, lista) {
@@ -133,9 +139,10 @@ export function parseNoticias(texto, citacoes) {
   let pos = 0;
   for (const linha of texto.split('\n')) {
     const inicioLinha = pos; pos += linha.length + 1;
-    const m = linha.match(/^\s*NOTICIA\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|([^|]+)\|(.+)$/);
+    const m = linha.match(/^\s*NOTICIA\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|(?:\s*(torneio|patch|personagem|combo|cenario|comunidade)\s*\|)?([^|]+)\|(.+)$/i);
     if (!m) continue;
-    const [, data, tituloBruto, resumoBruto] = m;
+    const [, data, tipoBruto, tituloBruto, resumoBruto] = m;
+    const kind = TIPOS_NOTICIA.includes((tipoBruto || '').toLowerCase()) ? tipoBruto.toLowerCase() : 'cenario';
     const inicioResumo = inicioLinha + linha.lastIndexOf(resumoBruto), fimResumo = inicioResumo + resumoBruto.length;
     const daLinha = citacoes.filter(c => c.inicio < inicioLinha + linha.length && c.fim > inicioLinha);
     if (!daLinha.length) continue;                       // sem fonte = descarta
@@ -152,7 +159,7 @@ export function parseNoticias(texto, citacoes) {
     }
     const fontes = [];
     for (const c of daLinha) if (!fontes.some(f => f.url === c.url)) fontes.push({ url: c.url, titulo: c.titulo });
-    noticias.push({ dataPublicacao: data, titulo: tituloBruto.trim(), resumo: resumoBruto.trim(),
+    noticias.push({ dataPublicacao: data, kind, titulo: tituloBruto.trim(), resumo: resumoBruto.trim(),
       resumoComFontes: resumoComFontes.trim().replace(/\s+([.,;!?])/g, '$1'), fontes });
   }
   return noticias;
@@ -243,7 +250,8 @@ async function noticias(db, apiKey) {
         verificacao: { real: v?.real ?? null, dataConfirmada: v?.dataPublicacao ?? null, motivo: v?.motivo ?? null,
           queries: r.queries, fontesVerificacao: r.citacoes.map(c => c.url), verificadaEm: FieldValue.serverTimestamp(), por: 'github' },
       });
-      if (motivo) descartadas++; else publicadas.push(n.titulo);
+      if (motivo) descartadas++;
+      else if (await publicarNoCenario(db, { ...n, dataPublicacao: v?.dataPublicacao || n.dataPublicacao }, hoje)) publicadas.push(n.titulo);
     }
     if (buscar) {
       const r = await gemini(apiKey, promptBusca(hoje));
@@ -282,6 +290,66 @@ async function videos(db) {
   return { log: `vídeos: ${novos.length} novo(s)`, novos };
 }
 
+
+// ---------- notícias do Gemini no Cenário (coleção "news") ----------
+// O link do Google (vertexaisearch...) é trocado pelo endereço real da matéria.
+async function linkReal(url) {
+  if (!/vertexaisearch\.cloud\.google\.com\/grounding-api-redirect/.test(url)) return url;
+  try {
+    const r = await fetch(url, { redirect: 'manual', signal: AbortSignal.timeout(8000) });
+    return r.headers.get('location') || url;
+  } catch { return url; }
+}
+const isoSP = () => {
+  const d = new Date(Date.now() - 3 * 3600 * 1000).toISOString().slice(0, 19);
+  return `${d}-03:00`;
+};
+async function publicarNoCenario(db, n, hoje) {
+  const url = await linkReal(n.fontes?.[0]?.url || '');
+  if (!/^https?:\/\//.test(url)) return false;
+  const ref = db.doc(`news/${idNoticiaUrl(url)}`), atual = await ref.get();
+  if (atual.exists) return false;                       // já publicada (pelo Claude ou antes)
+  await ref.set({ id: ref.id, title: n.titulo, url, source: dominioNoticia(url), publishedAt: n.dataPublicacao,
+    summary: n.resumo, kind: n.kind || 'cenario', characterIds: [], createdAt: isoSP(), runId: `${hoje}-gemini` });
+  return true;
+}
+
+// ---------- relatórios de combos do Claude (relatorios/*.json) ----------
+async function relatorios(db) {
+  let arquivos = [];
+  try { arquivos = (await readdir('relatorios')).filter(f => f.endsWith('.json')).sort(); } catch { return { log: 'relatórios: pasta vazia', combos: [], noticias: [] }; }
+  const reg = db.doc('config/relatoriosImportados');
+  const feitos = (await reg.get()).data()?.arquivos || {};
+  const combos = [], noticias = [], log = [];
+  for (const f of arquivos) {
+    const chave = f.replace(/\./g, '_');
+    if (feitos[chave]) continue;
+    try {
+      const r = await importarRelatorio(db, JSON.parse(await readFile(`relatorios/${f}`, 'utf8')));
+      combos.push(...r.novosCombos); noticias.push(...r.novasNoticias);
+      log.push(`${f}: ${r.added} combo(s) novo(s), ${r.updated} atualizado(s), ${r.novasNoticias.length} notícia(s)${r.erros.length ? `; avisos: ${r.erros.join(' ')}` : ''}`);
+      await reg.set({ arquivos: { [chave]: { em: FieldValue.serverTimestamp(), combos: r.added, atualizados: r.updated } } }, { merge: true });
+    } catch (e) { log.push(`${f}: ERRO ${e.message}`); process.exitCode = 1; }
+  }
+  return { log: log.length ? `relatórios: ${log.join(' | ')}` : 'relatórios: nada novo', combos, noticias };
+}
+
+// ---------- estado da base para a pesquisa do Claude ----------
+async function exportarEstado(db) {
+  const meta = (await db.doc('meta/game').get()).data() || {};
+  const combos = (await db.collection('combos').get()).docs.map(d => d.data())
+    .map(c => ({ id: c.id, characterId: c.characterId, controls: c.controls, notation: c.notation, status: c.status }))
+    .sort((a, b) => (a.characterId + a.controls + a.notation).localeCompare(b.characterId + b.controls + b.notation));
+  const noticias = (await db.collection('news').get()).docs.map(d => d.data())
+    .map(n => ({ url: n.url, title: n.title, publishedAt: n.publishedAt || null, removed: !!n.removed }))
+    .filter(n => n.url).sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt))).slice(0, 300);
+  const estado = { explicacao: 'Gerado pelo robô a cada execução. Use para não repetir combos e notícias. Notícia com removed=true foi derrubada pela comunidade: nunca republique.',
+    balancePatch: meta.balancePatch || null, combos, noticias };
+  await mkdir('estado', { recursive: true });
+  await writeFile('estado/estado.json', JSON.stringify(estado, null, 1) + '\n');
+  return `estado: ${combos.length} combos, ${noticias.length} notícias`;
+}
+
 // ---------- execução ----------
 async function main() {
   const sa = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT || 'null');
@@ -291,11 +359,23 @@ async function main() {
   const db = getFirestore();
   const avisos = [];
 
+  try {
+    const r = await relatorios(db);
+    console.log(r.log);
+    if (r.combos.length) {
+      const nomes = [...new Set(r.combos.map(c => c.characterId))].slice(0, 4).join(', ');
+      avisos.push({ title: r.combos.length === 1 ? 'Combo novo no ComboTrialz' : `${r.combos.length} combos novos no ComboTrialz`,
+        body: r.combos.length === 1 ? `${r.combos[0].characterId}: ${r.combos[0].title || r.combos[0].notation}` : `Para ${nomes}${r.combos.length > 4 ? ' e mais' : ''}`,
+        link: r.combos.length === 1 ? `./#/c/${r.combos[0].characterId}` : './#/' });
+    }
+    if (r.noticias.length) avisos.push({ title: 'Novidades do cenário', body: r.noticias.length === 1 ? r.noticias[0].title : `${r.noticias[0].title} e mais ${r.noticias.length - 1}`, link: LINK_NOVIDADES });
+  } catch (e) { console.error('relatórios falharam:', e.message); process.exitCode = 1; }
+
   if (apiKey) {
     try {
       const n = await noticias(db, apiKey);
       console.log(n.log);
-      if (n.publicadas.length) avisos.push({ title: 'ComboTrialz News',
+      if (n.publicadas.length) avisos.push({ title: 'Novidades do cenário',
         body: n.publicadas.length === 1 ? n.publicadas[0] : `${n.publicadas.length} novidades: ${n.publicadas[0]} e mais`, link: LINK_NOVIDADES });
     } catch (e) { console.error('notícias falharam:', e.message); process.exitCode = 1; }
   } else console.log('notícias: sem GEMINI_API_KEY, pulando');
@@ -308,6 +388,8 @@ async function main() {
       body: [...new Set(v.novos.map(x => x.canal))].slice(0, 3).join(', ') + ' e mais', link: './#/novidades?aba=videos' });
     else for (const x of v.novos) avisos.push({ title: `Vídeo novo · ${x.canal}`, body: x.titulo, link: `https://www.youtube.com/watch?v=${x.id}` });
   } catch (e) { console.error('vídeos falharam:', e.message); process.exitCode = 1; }
+
+  try { console.log(await exportarEstado(db)); } catch (e) { console.error('estado falhou:', e.message); }
 
   const entregues = await enviarPush(db, avisos).catch(e => { console.error('push falhou:', e.message); return 0; });
   console.log(`push: ${avisos.length} aviso(s), ${entregues} entrega(s)`);

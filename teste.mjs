@@ -1,6 +1,8 @@
 // Testes rápidos sem Firebase: node teste.mjs
 // Com GEMINI_API_KEY definido, também faz uma busca real no Gemini.
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { importarRelatorio, idNoticiaUrl } from './importar.mjs';
 import { idNoticia, parseNoticias, parseVeredito, parseVereditos, dataEhRecente, somarDias, feedYoutube, gemini, extrairResposta } from './robo.mjs';
 
 // mesmo ID que o app gera no navegador (conferido no app)
@@ -23,6 +25,22 @@ assert.equal(ns[0].resumoComFontes, 'Ação confirmada hoje. [ex.com](https://ex
 const vv = parseVereditos('x [{"n":1,"real":true,"data_publicacao":"2026-10-16","motivo":"ok"},{"n":2,"real":false,"data_publicacao":null,"motivo":"boato"}] y');
 assert.equal(vv.get(1).real, true); assert.equal(vv.get(2).motivo, 'boato');
 console.log('funções: ok');
+
+// import do relatório real num Firestore de mentira
+{
+  const real = JSON.parse(readFileSync('teste-dados/relatorio-2026-10-16.json', 'utf8'));
+  const store = new Map([['meta/game', { balancePatch: { version: '2.0', date: '2026-10-13' } }],
+    ['news/' + idNoticiaUrl(real.news[1].url), { url: real.news[1].url, removed: { reason: 'comunidade' } }]]);
+  const snap = k => ({ exists: store.has(k), id: k.split('/').pop(), data: () => store.get(k), get: f => store.get(k)?.[f] });
+  const set = (k, v, o) => store.set(k, o?.merge ? { ...(store.get(k) || {}), ...v } : v);
+  const db = { doc: k => ({ path: k, get: async () => snap(k), set: async (v, o) => set(k, v, o) }),
+    collection: c => ({ get: async () => ({ docs: [...store.keys()].filter(k => k.startsWith(c + '/')).map(snap) }) }),
+    batch: () => { const ops = []; return { set: (r, v, o) => ops.push(() => set(r.path, v, o)), commit: async () => ops.forEach(f => f()) }; } };
+  const r = await importarRelatorio(db, real);
+  assert.equal(r.novasNoticias.length, 3, 'a notícia derrubada pela comunidade não volta');
+  assert.ok(store.has('runs/2026-10-16-importado'));
+  console.log('import do relatório: ok');
+}
 
 const vs = await feedYoutube('UCPGuorlvarThSlwJpyTHOmQ');
 assert.ok(vs.length > 0 && vs[0].id && vs[0].publicado);

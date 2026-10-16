@@ -2,10 +2,16 @@
 
 Roda sozinho nos servidores do GitHub, de graça, sem ninguém com o app aberto:
 
-- **a cada 3 h** pesquisa notícias de fighting games no Gemini (com Google Search) e grava como "pendente";
-- **na rodada seguinte** verifica todas as pendentes num pedido só e publica ou descarta;
+- **a cada 3 h** pesquisa notícias de fighting games no Gemini (com Google Search); na rodada seguinte
+  verifica e publica direto em **Novidades → Cenário** (coleção `news`), com o link real da matéria;
 - **a cada 15 min** confere os canais do YouTube cadastrados no app (Ajustes → Canais do YouTube);
-- **manda push** para os celulares inscritos quando publica notícia ou sai vídeo novo.
+- **importa os relatórios de combos do Claude** assim que chegam em `relatorios/` (mesma regra do botão
+  "Importar relatório" do app);
+- grava `estado/estado.json` (patch atual, combos e notícias que já existem) para a pesquisa do Claude não repetir;
+- **manda push** para os celulares inscritos: notícias, combos e vídeos novos.
+
+A pesquisa de combos do Claude roda como rotina agendada do Claude Code com o prompt de `rotina-claude.md`:
+ela lê `estado/estado.json`, salva `relatorios/relatorio-AAAA-MM-DD.json` e dá push. O robô faz o resto.
 
 O plano grátis do Gemini dá cerca de 20 pedidos por dia por modelo. Com busca a cada 3 h o robô gasta ~16.
 Para mudar: Settings → Secrets and variables → Actions → aba **Variables** → `HORAS_ENTRE_BUSCAS` (ex.: `4`).
@@ -34,9 +40,11 @@ Depois disso ele roda sozinho. Se der erro, o GitHub manda e-mail.
 ## O que aparece no log
 
 ```
+relatórios: relatorio-2026-10-17.json: 4 combo(s) novo(s), 0 atualizado(s), 5 notícia(s)
 notícias: 3 nova(s), 0 publicada(s), 0 descartada(s)
 vídeos: 1 novo(s)
 push: 1 aviso(s), 12 entrega(s)
+estado: 812 combos, 140 notícias
 ```
 
 `Gemini ... 429` = a cota grátis do dia acabou; ele tenta de novo na próxima rodada.
