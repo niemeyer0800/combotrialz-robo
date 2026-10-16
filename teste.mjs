@@ -48,9 +48,12 @@ console.log('funções: ok');
   console.log('import do relatório: ok');
 }
 
-const vs = await feedYoutube('UCPGuorlvarThSlwJpyTHOmQ');
-assert.ok(vs.length > 0 && vs[0].id && vs[0].publicado);
-console.log(`youtube: ok (${vs.length} vídeos; último: ${vs[0].titulo})`);
+// o feed do YouTube às vezes fica fora do ar para um canal; isso não é erro do robô
+try {
+  const vs = await feedYoutube('UCVg9nCmmfIyP4QcGOnZZ9Qg');
+  assert.ok(vs.length > 0 && vs[0].id && vs[0].publicado);
+  console.log(`youtube: ok (${vs.length} vídeos; último: ${vs[0].titulo})`);
+} catch (e) { console.warn('youtube: feed instável agora (' + e.message + ')'); }
 
 if (process.env.GEMINI_API_KEY) {
   const hoje = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());

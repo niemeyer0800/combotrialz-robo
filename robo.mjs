@@ -26,7 +26,8 @@ const MODELO = process.env.GEMINI_MODELO || 'gemini-2.5-flash';
 const RESERVAS = ['gemini-2.5-flash', 'gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.5-flash-lite'];
 // o plano grátis do Gemini dá ~20 pedidos/dia por modelo: busca a cada 3 h + 1 verificação em lote = ~16/dia
 const INTERVALO_NOTICIAS_MS = (Number(process.env.HORAS_ENTRE_BUSCAS) || 3) * 60 * 60 * 1000;
-const INTERVALO_VIDEOS_MS = 10 * 60 * 1000;
+const INTERVALO_VIDEOS_MS = 4 * 60 * 1000;           // o workflow roda a cada 5 min
+const ESTADO_MAX_MS = 6 * 60 * 60 * 1000;             // estado.json: regera se algo mudou ou a cada 6 h
 const ESPERA_VERIFICACAO_MS = 5 * 60 * 1000;
 const TOLERANCIA_DIAS = 1;
 const LINK_NOVIDADES = './#/novidades';
@@ -181,8 +182,14 @@ export function parseVeredito(texto) {
 // ---------- YouTube (feed público, sem chave) ----------
 const entidades = s => s.replace(/&(amp|lt|gt|quot|apos|#39);/g, (_, e) => ({ amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", '#39': "'" }[e]));
 export async function feedYoutube(canalId) {
-  const r = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${canalId}`, { headers: { 'User-Agent': 'Mozilla/5.0 (ComboTrialz)' } });
-  if (!r.ok) throw new Error(`feed ${canalId}: ${r.status}`);
+  // o feed do YouTube oscila entre 404 e 200: tenta algumas vezes antes de desistir
+  let r;
+  for (let i = 0; i < 4; i++) {
+    r = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${canalId}`, { headers: { 'User-Agent': 'Mozilla/5.0 (ComboTrialz)' } }).catch(() => null);
+    if (r && r.ok) break;
+    await new Promise(ok => setTimeout(ok, 1500 * (i + 1)));
+  }
+  if (!r || !r.ok) throw new Error(`feed ${canalId}: ${r ? r.status : 'sem resposta'}`);
   const xml = await r.text();
   return [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(([, e]) => ({
     id: (e.match(/<yt:videoId>([^<]+)<\/yt:videoId>/) || [])[1],
@@ -358,10 +365,12 @@ async function main() {
   initializeApp({ credential: cert(sa) });
   const db = getFirestore();
   const avisos = [];
+  let mudou = false;
 
   try {
     const r = await relatorios(db);
     console.log(r.log);
+    if (/combo|notícia/.test(r.log) && !/nada novo/.test(r.log)) mudou = true;
     if (r.combos.length) {
       const nomes = [...new Set(r.combos.map(c => c.characterId))].slice(0, 4).join(', ');
       avisos.push({ title: r.combos.length === 1 ? 'Combo novo no ComboTrialz' : `${r.combos.length} combos novos no ComboTrialz`,
@@ -375,9 +384,14 @@ async function main() {
     try {
       const n = await noticias(db, apiKey);
       console.log(n.log);
+      if (n.publicadas.length) mudou = true;
       if (n.publicadas.length) avisos.push({ title: 'Novidades do cenário',
         body: n.publicadas.length === 1 ? n.publicadas[0] : `${n.publicadas.length} novidades: ${n.publicadas[0]} e mais`, link: LINK_NOVIDADES });
-    } catch (e) { console.error('notícias falharam:', e.message); process.exitCode = 1; }
+    } catch (e) {
+      // cota grátis do Gemini esgotada ou modelo sobrecarregado: não é falha, tenta de novo na próxima rodada
+      if (/(429|503)|quota|RESOURCE_EXHAUSTED|UNAVAILABLE|high demand/i.test(e.message)) console.warn('notícias: Gemini sem cota agora, tenta na próxima rodada.', e.message.slice(0, 160));
+      else { console.error('notícias falharam:', e.message); process.exitCode = 1; }
+    }
   } else console.log('notícias: sem GEMINI_API_KEY, pulando');
 
   try {
@@ -389,7 +403,13 @@ async function main() {
     else for (const x of v.novos) avisos.push({ title: `Vídeo novo · ${x.canal}`, body: x.titulo, link: `https://www.youtube.com/watch?v=${x.id}` });
   } catch (e) { console.error('vídeos falharam:', e.message); process.exitCode = 1; }
 
-  try { console.log(await exportarEstado(db)); } catch (e) { console.error('estado falhou:', e.message); }
+  // estado.json lê a base inteira (centenas de leituras): só quando algo mudou ou a cada 6 h,
+  // para caber nas 50 mil leituras/dia do plano grátis do Firestore mesmo rodando a cada 5 min
+  try {
+    const reg = db.doc('config/estadoState'), ult = millis((await reg.get()).data()?.em);
+    if (mudou || Date.now() - ult > ESTADO_MAX_MS) { console.log(await exportarEstado(db)); await reg.set({ em: FieldValue.serverTimestamp() }); }
+    else console.log('estado: sem mudanças, mantido');
+  } catch (e) { console.error('estado falhou:', e.message); }
 
   const entregues = await enviarPush(db, avisos).catch(e => { console.error('push falhou:', e.message); return 0; });
   console.log(`push: ${avisos.length} aviso(s), ${entregues} entrega(s)`);
