@@ -4,9 +4,11 @@ on:
   schedule:
     - cron: '*/15 * * * *'   # a cada 15 min (o GitHub pode atrasar alguns minutos)
   workflow_dispatch: {}      # botão "Run workflow" para rodar na hora
+  push:
+    paths: ['relatorios/**'] # chegou relatório de combos do Claude: importa na hora
 
 permissions:
-  contents: write            # só para o "mantém ativo" abaixo
+  contents: write            # para salvar estado/estado.json e o "mantém ativo"
 
 concurrency:
   group: robo
@@ -29,6 +31,18 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           HORAS_ENTRE_BUSCAS: ${{ vars.HORAS_ENTRE_BUSCAS }}
 
+      # estado/estado.json: o que já existe na base, lido pela pesquisa do Claude
+      - name: Salva o estado da base
+        if: always()
+        run: |
+          git config user.name "robo-combotrialz"
+          git config user.email "robo@users.noreply.github.com"
+          git add estado/estado.json 2>/dev/null || exit 0
+          if ! git diff --cached --quiet; then
+            git commit -m "estado da base"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
+
       # O GitHub desliga agendamentos de repositórios sem commits há 60 dias.
       # Uma vez por mês o robô faz um commit vazio para continuar ligado.
       - name: Mantém o agendamento ativo
@@ -36,8 +50,6 @@ jobs:
         run: |
           ultimo=$(git log -1 --format=%ct)
           if [ $(( $(date +%s) - ultimo )) -gt $(( 45 * 86400 )) ]; then
-            git config user.name "robo-combotrialz"
-            git config user.email "robo@users.noreply.github.com"
             git commit --allow-empty -m "mantém o robô ativo"
             git push
           fi
