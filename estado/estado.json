@@ -1,0 +1,3404 @@
+{
+ "explicacao": "Gerado pelo robô a cada execução. Use para não repetir combos e notícias. Notícia com removed=true foi derrubada pela comunidade: nunca republique.",
+ "balancePatch": {
+  "source": {
+   "url": "https://mp1st.com/title-updates-and-patches/street-fighter-6-update-1-33-1-000-033-adds-yasmine-battle-adjustments",
+   "title": "MP1st — Update 1.33 adiciona Yasmine e ajustes de batalha",
+   "publishedAt": "2026-08-03"
+  },
+  "date": "2026-10-13",
+  "label": "Year 4 — Lançamento Arjun",
+  "version": "Arjun Release"
+ },
+ "combos": [
+  {
+   "id": "aki-c-4296bc87",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "cr.HK PC > M Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-ec60635d",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > cr.LP > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-1056cb8f",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-34e2e573",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "cr.LP x2 > st.LK > H Serpent Lash (envenenado), DR > cr.MP > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-09d7c0e9",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "DR > 3MP > st.MP > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-6245d695",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "DR > cr.LK > st.MP > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-916a5a0d",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "DR > cr.MK > st.HK > Heel Strike > cr.LP x2 > st.LK > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-5828a93a",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "st.HK PC > H Cruel Fate > cr.LP x2 > st.LK > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-26e58d48",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "st.MK > st.MP > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-1a20642a",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "st.MP > DRC > st.MK > st.HK > Heel Strike > cr.LP x2 > st.LK > H Serpent Lash",
+   "status": "fonte"
+  },
+  {
+   "id": "aki-c-26382808",
+   "characterId": "aki",
+   "controls": "classic",
+   "notation": "st.MP > Toxic Wreath",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-40a7da91",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.HP > H Adamant Flame > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-e9109244",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.HP > M Tatsumaki Zanku-kyaku > L Gou Shoryuken > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-5c6da12b",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > H Gou Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-7966574a",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > L Tatsumaki Zanku-kyaku > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-d87d62df",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > OD Tatsumaki Zanku-kyaku > M Gou Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-bd36adf5",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.HP > st.MK > H Gou Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-8c307c23",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.MP > cr.MP > H Gou Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-e38f0ca2",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.MP > cr.MP > L Tatsumaki Zanku-kyaku > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-b2d8e9f1",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > 6HP > cr.HP > H Adamant Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-5a85a9c4",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "st.HK > cr.MP > L Tatsumaki Zanku-kyaku > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-420ad6b0",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "st.HK > st.MP > st.MP > H Tatsumaki Zanku-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "akuma-c-ded18ed4",
+   "characterId": "akuma",
+   "controls": "classic",
+   "notation": "st.HP > H Adamant Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-592d2a9b",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "cr.HP > BS LP > BS HP > st.LK > H Aerial Knee Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-b08a70fc",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > 4MK > cr.HP > BS LP > BS HP > st.LK > H Aerial Knee Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-62ed0a1f",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "cr.MP > M Flash Axe > BS",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-0956c8d3",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "DR > 6MP > st.MP > M Flash Axe",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-3bf54081",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.HP (carregado) > Flash Chop > 4MK",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-2164a1f6",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP (1 a 2x) > L Flash Axe",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-4d5c72e9",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.LP x2 > H Aerial Knee Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-1e7acdbc",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.LP x2 > OD Aerial Knee Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-5933e06b",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.HP > Flash Chop > 4MK",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-80252053",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.HP > Flash Chop > Power Drop",
+   "status": "fonte"
+  },
+  {
+   "id": "alex-c-d27e74fc",
+   "characterId": "alex",
+   "controls": "classic",
+   "notation": "st.MP > H Aerial Knee Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-0558ab38",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "cr.HK PC > H Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-0bf6b453",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > L Arm of Justice",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-cf235e63",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "cr.LP CH > st.MK > L Cruel Shoulder",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-c8d49171",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "cr.LP PC > DRC > cr.HP > H Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-3ca42e22",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "DI (wall splat) > cr.HK > OD Divine Pillar > Cruel Shoulder ~ Justice Beyond > Indomitable Defense ~ Moral Breakdown",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-878e631a",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "DI PC > cr.HK > OD H Divine Pillar > passo à frente > Cruel Shoulder ~ Justice Beyond > Indomitable Defense ~ Moral Breakdown",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-1ee26cc3",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "DI PC > cr.HP > M Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-edeacc83",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > H Divine Pillar",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-15130bb8",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > M Cruel Shoulder",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-75ebf9a1",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HK PC > passo à frente > cr.HK > M Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-da064194",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HK PC > PDR > cr.HP > OD Divine Pillar > H Cruel Shoulder ~ Justice Beyond > Indomitable Defense ~ Moral Breakdown",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-f285c6d5",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HK PC, DR > cr.HK > OD H Divine Pillar > passo à frente > Cruel Shoulder ~ Justice Beyond > Indomitable Defense ~ Moral Breakdown",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-2c43729a",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HP > st.HP > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-0cb345d9",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HP > st.HP > st.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-21b366e8",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.HP > st.HP > st.HP",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-0ed122ad",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP > DRC > st.LP > st.MK > DRC > cr.HP > H Arm of Justice ~ 6P > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-ae61e63b",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.HP > H Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-d28eefe4",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.HP > H Arm of Justice ~ 6P > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-dfc71a06",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.MP > OD Arm of Justice > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-9b0f6f5e",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "st.MP PC > H Arm of Justice ~ 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "arjun-c-42913d3b",
+   "characterId": "arjun",
+   "controls": "classic",
+   "notation": "Stun > pulo para trás > Divine Pillar > Indomitable Defense ~ Moral Breakdown > H Cruel Shoulder ~ Justice Beyond > Indomitable Defense ~ Moral Breakdown",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-09cca512",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "6HP PC, DR > st.HP > Coward Crouch > Wild Lift > Amazon River Run",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-5e626176",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > Electric Thunder",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-c94f8825",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.HK > st.HP > Coward Crouch > Wild Lift > M Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-e3b12519",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "cr.MP > Electric Thunder",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-dce49506",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "cr.MP > M Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-33645b90",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "DI (crumple) > st.HP > Electric Thunder (segurado) > H Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-e79c4eaf",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "DI (limpo) > Surprise Forward Hop > st.HP > Coward Crouch > Wild Lift > Amazon River Run",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-0ffbbfaa",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.HP > Electric Thunder (segurado) > H Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-ba2ff091",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "DR > 6MP > st.HK > cr.LP > L Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-813c96b6",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HK > cr.LP > L Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-ab40fd8b",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP > Coward Crouch > Wild Lift > M Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-6309b1da",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP > DRC > st.HK > st.HP > DRC > st.HK > st.HP > Coward Crouch > Wild Lift > M Rolling Attack > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-ba45353d",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP > Wild Lift > Electric Thunder > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-2f8e4d86",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HP > Coward Crouch > Wild Lift > Blanka-chan Bomb",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-eed41a5a",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HP > Coward Crouch > Wild Lift > Electric Thunder > H Vertical Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-009ec467",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.HP > SA2 > st.HP > L Vertical Rolling Attack > Rolling Cannon (↘) > L Vertical Rolling Attack > Rolling Cannon (↘, atrasado)",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-630251e0",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.LK > cr.LP > Electric Thunder",
+   "status": "fonte"
+  },
+  {
+   "id": "blanka-c-ade729cc",
+   "characterId": "blanka",
+   "controls": "classic",
+   "notation": "st.LK > st.LK > M Rolling Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-91dd4f11",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.HP PC > DRC > st.HP > H Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-43854a18",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.HP PC > st.HP > H Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-359403f2",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > st.LK > M Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-05fbebbd",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > M Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-3cdcd451",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-f75aae69",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.HP > st.HP > H Cannon Spike (1º hit) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-8106e75b",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.HP > st.HP > H Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-03129c88",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MP > st.HP > M Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-38ef9179",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "cr.MP PC > st.HP > H Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-9d7ff0be",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.HP > L Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-9c009c42",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "DI PC > cr.HP > st.HP > HK > M Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-f1b4fcea",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "DI PC > st.HP > L Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-9b730192",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "j.HK > st.HP > HK > M Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-7bef216b",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "st.HP PC > L Spiral Arrow > H Cannon Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "cammy-c-f8bc6874",
+   "characterId": "cammy",
+   "controls": "classic",
+   "notation": "st.LP CH > cr.MP > H Spiral Arrow",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-bdadf5d4",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > L Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-cce08272",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > Hakkei > Serenity Stream > Tenku Kick > Yoso Kick > Soaring Eagle Punches",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-3ab16177",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MP > Hakkei > Serenity Stream > Forward Strike > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-453ccc22",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DI (wall splat) > Hakkei > H Hundred Lightning Kicks > H Tensho Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-f48e7939",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DI (wall splat) > Yokusen Kick > Serenity Stream > Tenku Kick > Yoso Kick x2 > Soaring Eagle Punches",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-7caabb9e",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DI PC > cr.HP > Serenity Stream > Tenku Kick > Yoso Kick x2 > j.HP > forward dash",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-5e60ce09",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DI PC > Falling Crane > L Hundred Lightning Kicks > H Tensho Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-ac5e46e3",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DI PC > Falling Crane > L Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-b5f29eea",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "DR > Water Lotus Fist > cr.MP > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-d09c5298",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "H Hazanshu PC > cr.MK > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-26a45d4d",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "Hakkei > H Hundred Lightning Kicks > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-a20f6c03",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "j.HK > st.MP > cr.MP > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-6047fafd",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "OD Hazanshu PC > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-9fb25211",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.HK (no ar) > Serenity Stream > Senpu Kick > H Tensho Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-63cc4799",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.HP PC > Serenity Stream > Senpu Kick > H Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-1d6c1709",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.LP > st.MP > cr.MP > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-20c448d1",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.LP CH > Swift Thrust > M Hundred Lightning Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-4d11f98b",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > H Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-48872760",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > M Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-8d22ad72",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Spinning Bird Kick > H Tensho Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-6726731f",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Spinning Bird Kick > L Hundred Lightning Kicks > H Tensho Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-7847c604",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Spinning Bird Kick > L Hundred Lightning Kicks > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "chunli-c-88bfd221",
+   "characterId": "chunli",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Spinning Bird Kick > L Spinning Bird Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-e2768542",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.HP > M Seismic Hammer > HJ H Burning Kick > H Thunder Dash > Tracer Combination",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-9ee9d842",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.HP > M Seismic Hammer > HJ MP > H Burning Kick (aéreo)",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-d9ca0a8b",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.HP > OD Seismic Hammer > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-759f083d",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > M Thunder Dash",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-f805ad8d",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.LP x2 > st.LK > H Thunder Dash > Tracer Combination",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-f15d17a5",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "cr.MK > HJC > M Thunder Dash > Tracer Combination",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-64c8c75e",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "st.MK > st.LK > M Thunder Dash",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-83e1626c",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > L Burning Kick > Knuckled Pursuit",
+   "status": "fonte"
+  },
+  {
+   "id": "cviper-c-7e998e24",
+   "characterId": "cviper",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > L Thunder Dash > Tracer Combination",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-e6d5876a",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.HK (counter no ar) > H Jackknife Maximum",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-9d1a3508",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.HP > cr.MP > DRC > cr.HP > st.HP > M Machine Gun Uppercut > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-d139b268",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.HP > cr.MP > DRC > st.MP > cr.HP > cr.MP > H Jackknife Maximum",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-3a279bcf",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.HP > cr.MP > L Machine Gun Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-d22a150a",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.HP > cr.MP > M Jackknife Maximum > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-032b06be",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.MP > OD Jus Cool > HK > H Jackknife Maximum (atrasado)",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-d1dd0ea3",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.MP > OD Jus Cool > HK > OD Double Rolling Sobat > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-059fec7a",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.MP > OD Jus Cool > MK > H Double Rolling Sobat",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-27f549da",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "cr.MP > OD Jus Cool > MK > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-0034de3c",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.MP > st.MP > st.HP > H Jackknife Maximum",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-5bc7a091",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.HK PC > PDR > st.MP > cr.HP > cr.MP > H Jackknife Maximum",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-97eb65b0",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP > DRC > cr.LP > cr.HP > cr.MP > Quick Rolling Sobat > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-b80ec06c",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP > Quick Rolling Sobat",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-dcfc353a",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.MP > st.LK > DRC > cr.LP > cr.HP > cr.MP > H Jackknife Maximum",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-c3662cbc",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.MP > st.LK > H Double Rolling Sobat",
+   "status": "fonte"
+  },
+  {
+   "id": "deejay-c-d027c845",
+   "characterId": "deejay",
+   "controls": "classic",
+   "notation": "st.MP > st.LK > Quick Rolling Sobat > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-97c051f0",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "1HP > M Yoga Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-4c2ccccb",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "4MK > H Yoga Blast > L Yoga Blast",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-68ef4a49",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "4MK > M Yoga Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-7df7b962",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "Aerial Yoga Float > j.HP > 1HP > M Yoga Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-56629c15",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "cr.LP > DRC > st.LP > 4MP > M Yoga Blast > teleporte (PPP à frente)",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-2dc3f8e5",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > 4MK > H Yoga Flame",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-af10a5e7",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "OD Yoga Flame > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-d7898c66",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "OD Yoga Flame > st.HK > H SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-ecf3f04b",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "st.HK PC > 1HP > OD Yoga Flame > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-1fe19a62",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "st.HK PC > 1HP > OD Yoga Flame > st.HK > H SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-7a24f2f0",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP > OD Yoga Fire",
+   "status": "fonte"
+  },
+  {
+   "id": "dhalsim-c-8dd350e7",
+   "characterId": "dhalsim",
+   "controls": "classic",
+   "notation": "st.LP > cr.LP > OD Yoga Fire > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-a546f414",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "cr.LP > st.LP > M Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-a481c555",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "cr.MK > st.MP > st.HP > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-1e45fe26",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.HP > cr.MK > cr.MP > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-1a15247a",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.HP > H Psycho Flicker > L Psycho Uppercut > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-2e06a3ce",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "golpe no chão > SA2 > st.HP > H Psycho Flicker (carregado) > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-299fb77d",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP > Kill Switch Chaser > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-68fde773",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.HP > DRC > st.HK > st.HP > DRC > st.HK > st.HP > H Psycho Blitz > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-d295dd18",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.HP > OD Psycho Flicker > H Psycho Flicker > Kill Switch Break > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-65d6a090",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.HP > OD Psycho Flicker > L Psycho Uppercut > H Psycho Blitz > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-4836373a",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.HP PC > cr.MK > OD Psycho Flicker > H Psycho Flicker > Kill Switch Break > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-f7b2affb",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.MK > L Psycho Flicker",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-8b3d222c",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.MP > cr.LK > M Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-0eb5b90c",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.MP > st.HP > H Psycho Blitz",
+   "status": "fonte"
+  },
+  {
+   "id": "ed-c-c05d6e57",
+   "characterId": "ed",
+   "controls": "classic",
+   "notation": "st.MP > st.HP > Kill Switch Break > M Psycho Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-2fdb3cb7",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "cr.HP > CA",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-2a8c12c2",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "cr.HP > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-288c0f9c",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "cr.HP > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-2c68a555",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > L Hundred Hand Slap",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-9d91af70",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "DI PC > st.HP > OD Taiho Cannon Lift > st.HK > Teppo Triple Slap > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-d2320e16",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "DI PC > st.HP > Taiho Cannon Lift > Sumo Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-4f3fc05b",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "st.MP > DRC > st.MP > st.HP > Sumo Dash > Taiho Cannon Lift",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-ef9caee1",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "st.MP > DRC > st.MP > st.HP > Taiho Cannon Lift > H Sumo Smash",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-af9f64a5",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "st.MP > DRC > st.MP > st.HP > Taiho Cannon Lift, DR > st.MP > 3HK > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "ehonda-c-5e69e5d2",
+   "characterId": "ehonda",
+   "controls": "classic",
+   "notation": "st.MP > Sumo Dash > Teppo Triple Slap",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-1014621b",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.LP (1 a 3x) > L Spinning Scythe",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-1933e49c",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.LP (1 a 3x) > st.LK > L Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-618063b0",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.LP > st.LK > H Scratch Wheel",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-30519b70",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.MK > cr.LP > L Spinning Scythe",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-a2367667",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.MK > HK > H Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-d2a6ee3d",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.MK > HK > OD Rhino Horn > H Scratch Wheel",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-42bbb963",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MK > cr.HP > H Spinning Scythe > M Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-27ad6010",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MK > cr.HP > H Spinning Scythe, DR > cr.MP > H Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-a291f7f7",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > H Spinning Scythe > M Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-3e3b1562",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "st.HP > HP > H Scratch Wheel",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-137bae8b",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "st.HP > HP > SA1 > H Scratch Wheel",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-e026083e",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "st.HP > HP > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-27249c85",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "st.MK > cr.LP > st.LK > H Scratch Wheel",
+   "status": "fonte"
+  },
+  {
+   "id": "elena-c-bb9d9271",
+   "characterId": "elena",
+   "controls": "classic",
+   "notation": "st.MP > MP > M Rhino Horn",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-157066e7",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "6HP PC > st.MP > cr.MP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-809464db",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "cr.HP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-4f04a401",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-c38b6385",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > st.LK > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-5ce5d0d2",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "cr.MP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-33681e3d",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "cr.MP > H Somersault Kick > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-f6822869",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "DR > 6MP > cr.MP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-c1609091",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "DR > st.MP > cr.HP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-5a346e94",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "DR > st.MP > st.MP > cr.MP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-1405e9ca",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "st.HK > SA2 > OD Sonic Boom > Sonic Break",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-4d6939da",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "st.HP PC > st.MP > 4HP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-69fdd476",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "st.MP > 4HP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-8388c4a4",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "st.MP > 4HP > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "guile-c-7227854a",
+   "characterId": "guile",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > H Somersault Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-ef0be580",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.HP > M Sun Flare",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-cfd23d99",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.HP PC > H Sun Rise > j.MP (baixo) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-9036dd7f",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.HP PC > H Sun Rise > M Solar Burst",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-3fdfe4e9",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > st.LK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-beebeab4",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.HK > st.MP > MK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-26bfa004",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MK > H Sun Rise > Solar Burst Lv1",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-038b4bf6",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > cr.HP > H Sun Rise > L Solar Burst",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-8485de7a",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.MP > st.LK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-db978c4c",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "cr.MP > st.MP > MK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-ac994e5d",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "DI (wall splat) > 4HP > HP > M Sun Flare > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-2a643a2a",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "DI PC > forward dash > 4HP > HP > M Sun Flare",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-7e9ca91f",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "j.HP > st.HK > cr.LP > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-29eee6f4",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "j.MK > cr.MP > st.LK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-935bafa5",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "st.HK > cr.LP > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-61c553d5",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "st.HK CH > st.MP > MK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-0796fba6",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "st.LK CH > DRC > cr.MP > st.MP > MK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-887307e5",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "st.MK > OD Sun Flare Lv3 > forward dash > H Sun Rise > M Solar Burst",
+   "status": "fonte"
+  },
+  {
+   "id": "ingrid-c-09541a12",
+   "characterId": "ingrid",
+   "controls": "classic",
+   "notation": "st.MP > MK > M Sun Rise",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-eb2eb844",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.HP > H Swagger Step",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-09efe72f",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LK > st.LK > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-3558a963",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > SA2 > cr.MK > L Swagger Step > Swagger Hermit Punch",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-ac1a9520",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > st.LK > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-bbb33bcb",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.MP > cr.HP > H Freeflow Kicks",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-23dea308",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > KK > jump cancel > j.HK > st.HP (2º hit) > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-656b5909",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > KK > jump cancel > j.HK > sweep TC (bebida)",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-574dfc4d",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.MP > SA2 > cr.HP > H Swagger Step > Swagger Hermit Punch",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-e03d92ac",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "cr.MP PC > cr.HP > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-ffa961dc",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "DI (wall splat) > cr.HP > OD Swagger Step > sweep TC (bebida)",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-7c60948e",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.MP > sweep TC (bebida)",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-1ef20ec5",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "DR > st.HP > st.LK > st.LK > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-593d23a5",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-3dd66883",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "SA3 > forward dash > st.HP > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-6ebc1c0f",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "st.HK PC > cr.HP > H Swagger Step > CA",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-1b07371f",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "st.HK PC > forward dash > cr.HP > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-5a164585",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "st.MP > Bitter Strikes > L Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-0d4baf6e",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > H Arrow Kick",
+   "status": "fonte"
+  },
+  {
+   "id": "jamie-c-81b67b09",
+   "characterId": "jamie",
+   "controls": "classic",
+   "notation": "st.MP CH > cr.MP > L Bakkai",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-10e546fd",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "cr.LP > st.LP > L Stribog",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-f3830d54",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > cr.HP > H Stribog > M Torbalan > H Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-bf951285",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "cr.MP > st.LK > L Stribog",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-c4209cea",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "DI PC > andar > st.HP (no ar) > H Stribog > M Torbalan > Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-78aa98f8",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "DR > 6MK > cr.MP > DRC > cr.HP > M Torbalan > H Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-79a94b42",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "DR > 6MK > cr.MP > M Stribog",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-cc59aa60",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.HK > cr.MP > OD Stribog, DR > 6HK > M Stribog > st.HP > Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-ec9fd2f2",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.HK > HP > M Stribog",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-baed6055",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.HK > HP > SA2 > cr.MK > st.HK > cr.HP > H Departure > st.HK > HP > L Triglav > H Stribog > M Torbalan > H Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-f1783e65",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.HP > L Torbalan",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-8cab6990",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.HP PC > H Stribog > M Torbalan > H Triglav",
+   "status": "fonte"
+  },
+  {
+   "id": "jp-c-3551cb95",
+   "characterId": "jp",
+   "controls": "classic",
+   "notation": "st.MK > M Stribog",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-1446c21c",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "6HP PC > cr.HP > H Fuhajin > H Tensenrin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-c2e376e1",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "6HP PC > cr.HP > H Fuhajin > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-5eb994b3",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > cr.LP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-c6037845",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MP > cr.MP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-fe50e643",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MP > st.HP > H Fuhajin > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-96904bc9",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "cr.MP PC > H Fuhajin > H Tensenrin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-c2269210",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "cr.MP PC > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-cb3b9ef1",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "DI (wall splat) > 6HP > cr.HP > H Fuhajin > H Tensenrin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-080444b3",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "DI PC > 6HP > cr.HP > H Fuhajin > H Tensenrin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-cd86825d",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "DI PC > j.HP > st.MP > cr.MP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-0de06dc5",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "DI PC > st.MP > cr.MP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-48bf3306",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "DR > 6HP PC > cr.HP > H Fuhajin > H Tensenrin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-0e9ad78f",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "j.HP > st.MP > cr.MP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-15144119",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > Gokosatsu (reforçado)",
+   "status": "fonte"
+  },
+  {
+   "id": "juri-c-a655f2bf",
+   "characterId": "juri",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > M Fuhajin",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-d4a31312",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.HP > H Jinrai Kick > HK > L Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-b7e4a651",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.HP > H Jinrai Kick > OD Dragonlash Kick > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-599a80b8",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.HP PC > DRC > cr.HP > Emergency Stop > cr.MP > st.MP > st.HP > Quick Dash Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-96275a4e",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > st.LK > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-1cc06a2c",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.HP > Emergency Stop > cr.MP > L Tatsumaki Senpu-kyaku > M Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-9188cbc9",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.HP > Emergency Stop > cr.MP > st.MP > st.HP > Quick Dash Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-3c5dbece",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.LP > st.MP > st.HP > Quick Dash Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-9ddec591",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP > Quick Dash Shoryuken (2º hit) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-2a8f73a7",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP > st.LK > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-d1b05cb9",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP > st.MP > st.HP > Quick Dash Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-bcef463e",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP CH > cr.MK > Quick Dash Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-165f7e40",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP PC > cr.MK > Quick Dash Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-e41ba4ee",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "cr.MP PC > H Jinrai Kick > HK > L Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-3801d699",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.HP > H Jinrai Kick > HK > M Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-0a09661b",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "DI PC > j.HK (vertical) > Quick Dash Dragonlash Kick > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-c901bd91",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "DI PC > j.HK (vertical), DR > st.HP > Quick Dash Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-15b9d1eb",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "DI PC > st.MP > st.HP > Quick Dash Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-4db9c419",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "H Shoryuken (1º hit no chão) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-0d6fb59d",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "j.HP > st.MP > st.HP > Quick Dash Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ken-c-26db4a39",
+   "characterId": "ken",
+   "controls": "classic",
+   "notation": "st.HP PC > cr.MK > Quick Dash Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-a3afc42b",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "4HK > cr.LP > H Bushin Senpukyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-52c9292d",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.LP x2 > st.LP > st.MP > cr.HP > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-97627bb5",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.LP x3 > H Bushin Senpukyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-08537509",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.LP x3 > L Vagabond Edge",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-4ea104ce",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.LP x3 > L Vagabond Edge > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-5a9cee44",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.MP > st.MP > st.HP > Sprint > Shadow Slide",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-a9236bd3",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "cr.MP PC > st.MP > st.HP > Sprint > Shadow Slide > M Bushin Senpukyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-1b43c690",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "DI (wall splat) > cr.HP > M Vagabond Edge > st.MP (no vazio) > Shuriken Bomb Spread",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-af872d52",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "DI PC > st.HP > H Vagabond Edge > j.MP > OD Bushin Senpukyaku (aéreo)",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-6ea8b36c",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "DI PC > st.LP > st.MP > cr.HP > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-9045d7fa",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "DI PC > st.MP > st.HP > Sprint > Shadow Slide",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-0ee5414f",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "DR > 4HK > st.MP > st.HP > Sprint > Shadow Slide",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-3d871837",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "j.HK > st.MP > st.HP > Sprint > Shadow Slide",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-f018902b",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "OD Nue Twister > Torso Cleaver > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-679def90",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "st.HP PC > H Vagabond Edge > j.MP > Bushin Senpukyaku (aéreo)",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-bf94c9c1",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "st.HP PC > H Vagabond Edge > j.MP > OD Bushin Senpukyaku (aéreo)",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-ff44c83e",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "st.MK > DRC > cr.HP > Sprint > Emergency Stop > cr.MP > cr.MP > st.MP > st.HP > Sprint > Shadow Slide",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-ca15ada1",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "st.MP > st.HP > OD Sprint > Bushin Hojin Kick > Torso Cleaver > Shuriken Bomb",
+   "status": "fonte"
+  },
+  {
+   "id": "kimberly-c-27563f65",
+   "characterId": "kimberly",
+   "controls": "classic",
+   "notation": "st.MP > st.HP > OD Sprint > Neck Hunter > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-fdba376b",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.HP > DRC > 4HP > st.MK > H Condor Spire (Windclad)",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-ec5ef7b0",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.HP > DRC > 4HP > st.MK > L Condor Spire",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-89589075",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.HP > H Condor Spire (Windclad) > OD Tomahawk Buster (Windclad) > OD Condor Dive > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-44d1dac2",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.HP > M Condor Wind",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-6fb5520d",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.HP > M Condor Wind > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-363b654b",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > cr.LP > M Condor Spire (Windclad)",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-73d3fa70",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > DRC > st.LP > cr.HP > M Condor Wind > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-f577ba8c",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > M Tomahawk Buster",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-f2818189",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "cr.MK > L Condor Wind",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-6af3999d",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "DI PC > j.HP (vertical) > 6HP > H Condor Wind",
+   "status": "fonte"
+  },
+  {
+   "id": "lily-c-c0ed3018",
+   "characterId": "lily",
+   "controls": "classic",
+   "notation": "st.HP PC > 4HP > H Condor Wind",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-073e357a",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "4HP PC > cr.HP > L Flash Knuckle (carregado) > M Sand Blast > M Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-726e6084",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "4HP PC > cr.HP > M Flash Knuckle (carregado) > No Chaser",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-2ce39984",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > L Flash Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-0a9372d8",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > L Flash Knuckle > L Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-ba24219b",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > OD Flash Knuckle > DDT",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-84b91c4a",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.MP > cr.HP > M Flash Knuckle (carregado) > L Flash Knuckle (carregado) > M Flash Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-6e7575f8",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.MP > cr.LP > L Flash Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-c0efa7ea",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "cr.MP PC > st.LP > st.MP > st.HP > M Sand Blast > L Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-08a26176",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "DI (wall splat) > st.HP > L Flash Knuckle (carregado) > L Sand Blast > M Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-cf1e4fbb",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "DI PC > cr.HP > M Flash Knuckle (carregado) > No Chaser",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-5aa3dedf",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "DI PC > cr.HP > M Flash Knuckle (carregado) > PDR > st.HP > H Flash Knuckle (carregado)",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-75141a3a",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "j.HK > st.LP > st.MP > st.HP > H Flash Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-94604cd3",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > DRC > 4HK > cr.HP > DRC > 4HK > cr.HP > H Flash Knuckle > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-3641d9a2",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > L Flash Knuckle (carregado) > j.MP > M Flash Knuckle (atrasado) > L Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-cb797b88",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > L Flash Knuckle (carregado) > L Flash Knuckle > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-7d308421",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > L Flash Knuckle (carregado) > M Sand Blast > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-ef69d942",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > L Flash Knuckle (carregado) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-d215b756",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP > OD Sand Blast > Fatal Shot > H Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-2221b4de",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP PC > L Flash Knuckle (carregado) > OD Flash Knuckle (atrasado) > DDT",
+   "status": "fonte"
+  },
+  {
+   "id": "luke-c-1aa0d0e6",
+   "characterId": "luke",
+   "controls": "classic",
+   "notation": "st.HP PC > M Flash Knuckle (perfect) > andar > H Rising Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-bb8500e8",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "4HK > HK > M Hishou Ryuuenjin",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-0a498ef3",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "4HK > HK > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-e57f62dd",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > cr.LP > L Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-1444586b",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > 4HK > cr.MP > H Ryuuenbu > H Hishou Ryuuenjin",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-8ee25aaf",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > 4HK > cr.MP > H Ryuuenbu > L Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-9affd762",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "cr.MP > cr.LP > L Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-9a237978",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "DR > 6MP > cr.MP > H Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-d1a87f89",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "j.HK > st.HP > H Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-37517c2e",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "j.HK > st.HP > OD Hissatsu Shinobi Bachi > j.MP > Musasabi no Mai",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-d189e16d",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.HP > DRC > 4HK > cr.MP > H Ryuuenbu > L Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-cfeacb32",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.HP > H Hissatsu Shinobi Bachi",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-60a62121",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.LK > LK > LK > Musasabi no Mai",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-f64ba197",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.LK > LK > LK > OD Musasabi no Mai > H Hishou Ryuuenjin",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-ba0b5450",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.LK > LK > LK > OD Musasabi no Mai > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-c965cc44",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.MP > OD Hissatsu Shinobi Bachi > j.MP > Musasabi no Mai",
+   "status": "fonte"
+  },
+  {
+   "id": "mai-c-af69628a",
+   "characterId": "mai",
+   "controls": "classic",
+   "notation": "st.MP > OD Hissatsu Shinobi Bachi > j.MP > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-55535788",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "cr.LP > cr.LP > H Rond-point",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-c7ac373d",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "DI (wall splat) > 4HP > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-baa2e6bb",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "DI (wall splat) > 4HP > OD Rond-point > 4HP > H Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-80aac693",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "DI PC > forward dash > 4HP > OD Rond-point > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-af1fbf6f",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "DR > cr.MP > 4HP > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-0680c3ef",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "j.HP > 4HP > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-36d3b2da",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "j.MK > cr.LP > cr.LP > H Rond-point",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-cb810ea3",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "st.MK > DRC > cr.MP > 4HP > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "manon-c-c6c13bc2",
+   "characterId": "manon",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.MP > 4HP > M Renversé",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-703738d8",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "6HK > H Dimachaerus > 6P > H Gladius",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-a6ed4eff",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "6HK > H Dimachaerus > 6P > H Gladius > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-267d0efd",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > L Dimachaerus > 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-9e0616bb",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MK > 4HP > H Dimachaerus > 6P > H Gladius",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-1801c3fb",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MK > 4HP > H Dimachaerus > 6P, DR > cr.HP > H Phalanx",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-4b9de7ec",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "cr.MP > M Gladius",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-cfb251ab",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "DR > 3HP > cr.LP > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-b525611c",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "st.HK PC, DR > 6HK > 6HK > M Dimachaerus > 6P > cr.HK",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-3ac2a3f0",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "st.HP (carregado) PC > 6HK > DRC > st.MK > 4HP > DRC > st.HP > st.MP > MP > M Gladius > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-2f8e348c",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "st.MP > MP > M Dimachaerus > 6P",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-6d2fd7bf",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "st.MP > MP > M Gladius",
+   "status": "fonte"
+  },
+  {
+   "id": "marisa-c-229095ea",
+   "characterId": "marisa",
+   "controls": "classic",
+   "notation": "st.MP > MP > OD Dimachaerus > 6P, DR > 4HP > H Phalanx",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-38219b69",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > st.LP > L Psycho Crusher Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-5da94c79",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "cr.LP > st.LK > L Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-039bc49b",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MP > cr.HP > H Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-b4ae9090",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "cr.MP > OD Double Knee Press > H Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-c383ac86",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "DI PC > st.HK > cr.MP > OD Double Knee Press > H Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-8059277d",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "j.HK > st.HK > cr.MP > M Psycho Crusher Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-409b31b7",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "j.HK > st.HK > cr.MP > OD Double Knee Press > H Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-a1631f10",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.HK PC > forward dash > cr.HP > OD Double Knee Press > 6HP > L Psycho Crusher Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-0b8ec21d",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.HP > st.LP > L Psycho Crusher Attack",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-c73841ac",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > DRC > st.MP > cr.HP > DRC > st.HK > 4HK > H Psycho Crusher Attack > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-788ba7c3",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > M Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-9987d9dc",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > M Backfist Combo > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-637600e1",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Backfist Combo > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "mbison-c-9d058c98",
+   "characterId": "mbison",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD Double Knee Press > H Backfist Combo",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-ab364a2e",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > st.LP > M Spinning Mixer",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-de92ec5d",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.MK > st.HP > M Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-4f9a207a",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "cr.MP > st.LK > L Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-070f1118",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.HK PC > 6MP > L Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-80f42ab5",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.HP > DRC > cr.HP > st.HP > M Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-b5a47d78",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.HP PC > H Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-d9a2dead",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.LP > st.LK > L Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-5bb7181e",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.MK > st.MP > DRC > cr.HP > st.HP > DRC > cr.HP > st.HP > L Eagle Spike > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "rashid-c-a7a97d6a",
+   "characterId": "rashid",
+   "controls": "classic",
+   "notation": "st.MK > st.MP > M Eagle Spike",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-840f8dc8",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "214LP(c) > DR > 2MP.236KK > 66 > 623LP.Level 3",
+   "status": "verificado"
+  },
+  {
+   "id": "ryu-c-9f4c42a4",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "2MK > 236HP",
+   "status": "verificado"
+  },
+  {
+   "id": "ryu-c-dd432899",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > st.LP > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-123aed0f",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > st.LP > L Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-f1f76262",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.HP > Short Uppercut > H High Blade Kick > Denjin Charge",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-79c59fb2",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.HP > Short Uppercut > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-0381611d",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > st.HP > Short Uppercut > H Shoryuken > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-ff3a4bd4",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI (wall splat) > cr.HP > M Hashogeki > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-a01615ea",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI (wall splat) > Short Uppercut > H High Blade Kick > M Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-9a3a7fb8",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI PC > forward dash > cr.HP > OD High Blade Kick > forward dash > M Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-e2047a83",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI PC > Solar Plexus Strike > cr.MP > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-d8e22875",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI PC > Solar Plexus Strike > cr.MP > OD High Blade Kick > Axe Kick > H Shoryuken > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-8e34b674",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DI PC > Solar Plexus Strike > cr.MP > OD High Blade Kick > Whirlwind Kick > Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-ea97b3bb",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "DR > Collarbone Breaker > Short Uppercut > OD High Blade Kick > Whirlwind Kick > Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-19ca1bab",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "j.HP > Short Uppercut > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-eb97c70a",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "st.HK PC > cr.HP > DRC > st.HK > cr.HP > DRC > st.HK > cr.HP > H Shoryuken > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-2e61f4c7",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "st.HK PC > forward dash > cr.HP > M Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-8ede4b2b",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-d8bf1f32",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "st.MP > cr.MP > OD High Blade Kick > Whirlwind Kick (atrasado) > Tatsumaki Senpu-kyaku",
+   "status": "fonte"
+  },
+  {
+   "id": "ryu-c-026e5b77",
+   "characterId": "ryu",
+   "controls": "classic",
+   "notation": "st.MP PC > st.HP > H Shoryuken",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-a1a85f5b",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "6HK > cr.MP > H Tiger Knee Crush",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-961b5215",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "6HK > cr.MP > OD Tiger Knee Crush > L Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-fb645090",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LK > st.LP > M Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-9f4545fc",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.LP > st.LP > L Tiger Nexus > Mighty Tiger",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-39c51bce",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MP > 4HP > H Tiger Knee Crush > L Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-876f08c1",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MP > 4HP > H Tiger Knee Crush > L Tiger Uppercut > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-1aa84ebb",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.MP > DRC > st.MP > st.HK (1º hit) > H Tiger Nexus > Nova Tiger > 6HK",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-38b8278f",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "cr.MP > M Tiger Nexus > Mighty Tiger",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-fcb8296f",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "j.HP > 4HP > H Tiger Knee Crush > L Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-544adf2c",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "OD High Tiger Shot > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-e0759513",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "st.MK > HK",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-e3ef654e",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "st.MP > cr.LP > M Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-1f03fac0",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "st.MP > st.MP > st.LP > M Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-a2bfb586",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "st.MP CH > 4HP > H Tiger Knee Crush > L Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "sagat-c-6d1c9449",
+   "characterId": "sagat",
+   "controls": "classic",
+   "notation": "st.MP CH > cr.MP > H Tiger Uppercut",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-6ec17d38",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.HP PC > H Power Charge > Round Wave > OD Burning Knuckle > SA2 > Twin Geyser > Triple Geyser",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-629967bc",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > H Rising Tackle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-f455c7cb",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.LK > cr.LP > M Burning Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-9c3240e8",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.MK > cr.HK > H Burning Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-aabfab96",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.HP > H Power Charge > H Crack Shoot (atrasado) > Quick Burn",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-11947234",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "cr.MP > st.LK > M Burning Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-bcfa714d",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "DI (wall splat) > cr.HP > M Crack Shoot > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-3f8029d4",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.HK PC > st.HP (1º hit) > H Power Charge > H Crack Shoot (atrasado) > H Rising Tackle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-acbe34da",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.HP (1º hit) > H Power Charge > H Burning Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-8aa6a923",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.HP (1º hit) > H Power Charge > H Crack Shoot (atrasado) > Quick Burn",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-5988e18b",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.HP (1º hit) > H Power Charge > Round Wave > M Power Charge > L Rising Tackle (1º hit) > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-d6a3f4af",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.HP (1º hit) > H Power Charge > Round Wave > SA1 > SA1",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-c78fd0b6",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.LK > M Burning Knuckle",
+   "status": "fonte"
+  },
+  {
+   "id": "terry-c-3edef823",
+   "characterId": "terry",
+   "controls": "classic",
+   "notation": "st.MP > DRC > cr.HP > H Power Charge > H Crack Shoot (atrasado) > Quick Burn",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-8e39501c",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "(BM) 9HP > [MP.MP.] > 236MP~6P > HP > 623HK",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-27037e64",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "2LK > 2LP [LP.LP] > 236MP~6P",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-c265aea9",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "9HP > 2HP xx 236HP~6P > 623LK",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-bfb38cc7",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.LP > OD Daloy ng Tubig > Alon > SA2 > H Talim ng Hangin > st.HP > H Lipad ng Agila",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-9a74f706",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.LP > st.LP > LP > L Daloy ng Tubig > Alon (reforçado)",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-f6ac78af",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.LP > st.LP > LP > M Daloy ng Tubig > Alon",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-c78ea9b1",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.MP > cr.HP > H Daloy ng Tubig > Alon",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-e7ea92f7",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MK > DRC > cr.MP > cr.HP > H Talim ng Hangin",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-0012f55e",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MP > H Daloy ng Tubig > Alon",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-da6af279",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MP > H Daloy ng Tubig > Alon (reforçado), DR > cr.MP > H Talim ng Hangin > st.HP > H Lipad ng Agila",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-cc6243f9",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MP > M Talim ng Hangin",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-0e84e981",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "cr.MP > OD Talim ng Hangin > st.HP > H Lipad ng Agila",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-2d6bcf6c",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "DI > 2HP xx en.236HP~6P > DP~R 2MP xx 214HP > 5HP(2) xx 623HK",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-81a6e1da",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "DR > 6MP > cr.MP > OD Talim ng Hangin > st.HP > H Lipad ng Agila",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-38c24f8d",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > H Daloy ng Tubig > Alon",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-b9616cc3",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "j.HP > cr.HP > H Talim ng Hangin",
+   "status": "fonte"
+  },
+  {
+   "id": "yasmine-c-0d4d8b65",
+   "characterId": "yasmine",
+   "controls": "classic",
+   "notation": "st.HP PC > cr.MP > OD Talim ng Hangin > st.HP > H Lipad ng Agila",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-26a41603",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-6cfba05b",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "6HK PC > 3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-9d8a39c3",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "6HP > 3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-6ebfb7f8",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > DRC > cr.LP > 3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-7b825f45",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > DRC > cr.LP > 3MP > DRC > cr.MP > 3MP > SA2",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-ffa7d73f",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > OD Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-4d2bfee0",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "cr.LK > st.LP > OD Double Lariat > SA3",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-d69bf8b0",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "DR > 6MK (ativo tardio) > 3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-63019313",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "DR > st.MP > MP > MP",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-4eb79c43",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "j.HP > 6HP > 3MP > Double Lariat",
+   "status": "fonte"
+  },
+  {
+   "id": "zangief-c-3fec990f",
+   "characterId": "zangief",
+   "controls": "classic",
+   "notation": "st.LK CH > DRC > cr.MP > 3MP > Double Lariat",
+   "status": "fonte"
+  }
+ ],
+ "noticias": [
+  {
+   "url": "https://www.shacknews.com/article/150227/street-fighter-6-year-4-yasmine-reaction",
+   "title": "Alex ficou mais forte e Ed perdeu espaço no patch",
+   "publishedAt": null,
+   "removed": false
+  },
+  {
+   "url": "https://www.shacknews.com/article/150879/arjun-street-fighter-6-impressions",
+   "title": "Primeiras impressões do Arjun na Tokyo Game Show",
+   "publishedAt": null,
+   "removed": false
+  },
+  {
+   "url": "https://dashfight.com/news/punk-big-bird-among-pros-critical-of-street-fighter-6-s-yasmine-9084",
+   "title": "Profissionais avaliam a Yasmine",
+   "publishedAt": null,
+   "removed": false
+  },
+  {
+   "url": "https://dashfight.com/news/street-fighter-6-season-4-begins-with-yasmine-major-balance-patch-9071",
+   "title": "Ajuste do Year 4: quem ganhou e quem perdeu",
+   "publishedAt": null,
+   "removed": false
+  },
+  {
+   "url": "https://saiganak.com/news/sf-cpt-premier-top-in-point-oct2026/",
+   "title": "Ranking do Capcom Pro Tour fecha os 8 classificados por pontos para a Capcom Cup 13",
+   "publishedAt": "2026-10-15",
+   "removed": false
+  },
+  {
+   "url": "https://dashfight.com/news/capcom-cup-13-all-25-players-qualified-so-far-9313",
+   "title": "Capcom Cup 13: a lista de classificados até agora",
+   "publishedAt": "2026-10-15",
+   "removed": false
+  },
+  {
+   "url": "https://dashfight.com/news/leffen-sets-his-sights-on-street-fighter-6-for-2027-9310",
+   "title": "Leffen anuncia que vai competir a sério no SF6 em 2027",
+   "publishedAt": "2026-10-14",
+   "removed": false
+  },
+  {
+   "url": "https://dashfight.com/news/street-fighter-6-day-1-arjun-might-be-broken-9307",
+   "title": "Arjun no primeiro dia: Divine Pillar, absorção de projéteis e dano cinza chamam atenção",
+   "publishedAt": "2026-10-14",
+   "removed": false
+  },
+  {
+   "url": "https://www.eventhubs.com/news/2026/oct/14/roblox-boxing-game-street-fighter/",
+   "title": "Street Fighter chega ao Untitled Boxing Game, do Roblox, por quatro semanas",
+   "publishedAt": "2026-10-14",
+   "removed": false
+  },
+  {
+   "url": "https://saiganak.com/en/news/sf-cpt-premier-ufa-2026-noahtheprodigy-victory/amp/",
+   "title": "NoahTheProdigy vence a UFA 2026 e garante vaga na Capcom Cup 13",
+   "publishedAt": "2026-09-14",
+   "removed": false
+  },
+  {
+   "url": "https://www.gematsu.com/2026/09/street-fighter-6-dlc-character-arjun-launches-october-13",
+   "title": "Arjun entra no elenco do SF6",
+   "publishedAt": "2026-09-07",
+   "removed": false
+  },
+  {
+   "url": "https://finalweapon.net/2026/09/07/street-fighter-6-dlc-character-arjun-release-date/",
+   "title": "Tifa no começo de 2027 e Bosch na primavera",
+   "publishedAt": "2026-09-07",
+   "removed": false
+  },
+  {
+   "url": "https://saiganak.com/news/streetfighter-6-cpt-sfl2026-final-tournamnet-date-place-announcement/amp/",
+   "title": "Capcom Cup 13 será de 10 a 14 de março de 2027 no Ryogoku Kokugikan",
+   "publishedAt": "2026-08-12",
+   "removed": false
+  },
+  {
+   "url": "https://esports.gg/guides/street-fighter-6/sf6-ewc-2026-main-event-results/",
+   "title": "Craime vence a EWC 2026 com Ryu e M. Bison",
+   "publishedAt": "2026-08-01",
+   "removed": false
+  },
+  {
+   "url": "https://esports.gg/news/street-fighter-6/evo-2026-sf6-meta-results/",
+   "title": "MenaRD é bicampeão do EVO com Blanka",
+   "publishedAt": "2026-06-27",
+   "removed": false
+  }
+ ]
+}
