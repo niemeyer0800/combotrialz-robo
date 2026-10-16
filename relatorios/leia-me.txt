@@ -1,0 +1,2 @@
+Os relatórios diários do Claude (relatorio-AAAA-MM-DD.json) chegam aqui.
+O robô importa cada arquivo uma vez só e manda o push.
