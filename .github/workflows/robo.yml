@@ -2,7 +2,7 @@ name: Robô ComboTrialz
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # a cada 15 min (o GitHub pode atrasar alguns minutos)
+    - cron: '*/5 * * * *'   # a cada 15 min (o GitHub pode atrasar alguns minutos)
   workflow_dispatch: {}      # botão "Run workflow" para rodar na hora
   push:
     paths: ['relatorios/**'] # chegou relatório de combos do Claude: importa na hora
