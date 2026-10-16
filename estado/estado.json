@@ -2350,6 +2350,13 @@
    "status": "fonte"
   },
   {
+   "id": "luke-m-2b6a6ac4",
+   "characterId": "luke",
+   "controls": "modern",
+   "notation": "CH Auto+M > Down.H xx CDR > Auto+M > Down.H xx [b.SP]* > Back.Auto+SP > Down.SP+H",
+   "status": "a_verificar"
+  },
+  {
    "id": "mai-c-bb8500e8",
    "characterId": "mai",
    "controls": "classic",
