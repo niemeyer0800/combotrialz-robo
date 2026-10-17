@@ -2,7 +2,7 @@ name: Robô ComboTrialz
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # a cada 15 min (o GitHub pode atrasar alguns minutos)
+    - cron: '*/5 * * * *'    # a cada 5 min, o mínimo do GitHub (pode atrasar alguns minutos)
   workflow_dispatch: {}      # botão "Run workflow" para rodar na hora
   push:
     paths: ['relatorios/**'] # chegou relatório de combos do Claude: importa na hora
@@ -30,6 +30,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           HORAS_ENTRE_BUSCAS: ${{ vars.HORAS_ENTRE_BUSCAS }}
+          BUSCA_GEMINI: ${{ vars.BUSCA_GEMINI }}
 
       # estado/estado.json: o que já existe na base, lido pela pesquisa do Claude
       - name: Salva o estado da base
