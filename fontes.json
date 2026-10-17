@@ -1,0 +1,17 @@
+{
+  "explicacao": "Feeds RSS que o robô lê a cada 15 min. Para adicionar um site, copie uma linha e troque nome e url. 'google' são buscas no Google Notícias (cobre sites sem RSS, como EventHubs e DashFight).",
+  "rss": [
+    { "nome": "Shacknews", "url": "https://www.shacknews.com/feed/rss" },
+    { "nome": "Gematsu", "url": "https://www.gematsu.com/feed" },
+    { "nome": "Siliconera", "url": "https://www.siliconera.com/feed/" },
+    { "nome": "Saiga NAK", "url": "https://saiganak.com/feed/" }
+  ],
+  "google": [
+    { "busca": "\"Street Fighter 6\" when:2d", "idioma": "en" },
+    { "busca": "SF6 OR \"Capcom Pro Tour\" OR \"Capcom Cup\" OR \"Street Fighter League\" when:2d", "idioma": "en" },
+    { "busca": "site:eventhubs.com when:2d", "idioma": "en" },
+    { "busca": "site:dashfight.com when:2d", "idioma": "en" },
+    { "busca": "\"Street Fighter\" when:2d", "idioma": "pt" },
+    { "busca": "Tekken OR \"Fatal Fury\" OR 2XKO OR \"Guilty Gear\" OR \"fighting game\" when:2d", "idioma": "en" }
+  ]
+}

@@ -3,6 +3,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { importarRelatorio, idNoticiaUrl } from './importar.mjs';
+import { lerFeed, nota, personagensDe, parecidas } from './noticias-rss.mjs';
 import { idNoticia, parseNoticias, parseVeredito, parseVereditos, dataEhRecente, somarDias, feedYoutube, gemini, extrairResposta } from './robo.mjs';
 
 // mesmo ID que o app gera no navegador (conferido no app)
@@ -25,6 +26,21 @@ assert.equal(ns[0].resumoComFontes, 'Ação confirmada hoje. [ex.com](https://ex
 const vv = parseVereditos('x [{"n":1,"real":true,"data_publicacao":"2026-10-16","motivo":"ok"},{"n":2,"real":false,"data_publicacao":null,"motivo":"boato"}] y');
 assert.equal(vv.get(1).real, true); assert.equal(vv.get(2).motivo, 'boato');
 console.log('funções: ok');
+
+// notícias por RSS: leitura, filtro e personagens
+{
+  const xml = `<rss><channel><item><title><![CDATA[Capcom Cup 13: Punk &amp; Kakeru qualify]]></title><link>https://ex.com/a</link><pubDate>Fri, 16 Oct 2026 12:00:00 GMT</pubDate><description>&lt;p&gt;Street Fighter 6 news&lt;/p&gt;</description></item>
+<item><title>Weekend deals on Street Fighter 6 - Shacknews</title><link>https://news.google.com/x</link><source url="https://www.shacknews.com">Shacknews</source></item></channel></rss>`;
+  const it = lerFeed(xml, 'Teste');
+  assert.equal(it.length, 2); assert.equal(it[0].titulo, 'Capcom Cup 13: Punk & Kakeru qualify'); assert.equal(it[0].resumo, 'Street Fighter 6 news');
+  assert.equal(it[1].fonte, 'Shacknews'); assert.equal(it[1].titulo, 'Weekend deals on Street Fighter 6');
+  assert.ok(nota('Capcom Cup 13 qualifiers set') >= 5 && nota('Weekend deals on Street Fighter 6') < 4);
+  assert.deepEqual(personagensDe('Mortal Kombat creator Ed Boon talks crossover with IGN Pakistan'), []);
+  assert.deepEqual(personagensDe('Chun-Li, M. Bison and A.K.I. get costumes').sort(), ['aki', 'chunli', 'mbison']);
+  assert.ok(parecidas('Street Fighter 6 reveals movie costumes for Zangief', 'Street Fighter 6 Reveals Movie Costumes for Zangief, E. Honda'));
+  console.log('rss: ok');
+}
+
 
 // import do relatório real num Firestore de mentira
 {

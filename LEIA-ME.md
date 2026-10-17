@@ -2,9 +2,11 @@
 
 Roda sozinho nos servidores do GitHub, de graça, sem ninguém com o app aberto:
 
-- **a cada 3 h** pesquisa notícias de fighting games no Gemini (com Google Search); na rodada seguinte
-  verifica e publica direto em **Novidades → Cenário** (coleção `news`), com o link real da matéria;
-- **a cada 15 min** confere os canais do YouTube cadastrados no app (Ajustes → Canais do YouTube);
+- **a cada 15 min** lê os feeds RSS de `fontes.json` (Shacknews, Gematsu, Siliconera, Saiga NAK e buscas no
+  Google Notícias que cobrem EventHubs e DashFight), filtra o que é de jogo de luta e junta as repetidas;
+- **a cada 2 h** faz UMA chamada ao Gemini que traduz, resume e classifica o lote; as relevantes entram em
+  **Novidades → Cenário** com o link da matéria original. Para adicionar um site, edite `fontes.json` no GitHub;
+- **a cada 5 min** confere os canais do YouTube cadastrados no app (Ajustes → Canais do YouTube);
 - **importa os relatórios de combos do Claude** assim que chegam em `relatorios/` (mesma regra do botão
   "Importar relatório" do app);
 - grava `estado/estado.json` (patch atual, combos e notícias que já existem) para a pesquisa do Claude não repetir;
@@ -13,8 +15,11 @@ Roda sozinho nos servidores do GitHub, de graça, sem ninguém com o app aberto:
 A pesquisa de combos do Claude roda como rotina agendada do Claude Code com o prompt de `rotina-claude.md`:
 ela lê `estado/estado.json`, salva `relatorios/relatorio-AAAA-MM-DD.json` e dá push. O robô faz o resto.
 
-O plano grátis do Gemini dá cerca de 20 pedidos por dia por modelo. Com busca a cada 3 h o robô gasta ~16.
-Para mudar: Settings → Secrets and variables → Actions → aba **Variables** → `HORAS_ENTRE_BUSCAS` (ex.: `4`).
+O plano grátis do Gemini dá cerca de 20 pedidos por dia por modelo e a cota é por projeto (várias chaves no mesmo
+projeto dividem o mesmo limite). A triagem do RSS usa no máximo 12 por dia. Sem cota, as notícias esperam; depois de
+8 h sem Gemini, as mais fortes de Street Fighter entram sem tradução.
+A pesquisa antiga (Gemini + Google Search) está desligada; para religar: Settings → Secrets and variables → Actions →
+aba **Variables** → `BUSCA_GEMINI` = `1`.
 
 ## Configurar (uma vez, só pelo site do GitHub)
 

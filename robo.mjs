@@ -21,6 +21,7 @@ import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import { getMessaging } from 'firebase-admin/messaging';
 import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
 import { importarRelatorio, idNoticiaUrl, dominio as dominioNoticia, TIPOS_NOTICIA } from './importar.mjs';
+import { coletar, triar } from './noticias-rss.mjs';
 
 const MODELO = process.env.GEMINI_MODELO || 'gemini-2.5-flash';
 const RESERVAS = ['gemini-2.5-flash', 'gemini-3.5-flash', 'gemini-flash-latest', 'gemini-3.5-flash-lite'];
@@ -380,19 +381,29 @@ async function main() {
     if (r.noticias.length) avisos.push({ title: 'Novidades do cenário', body: r.noticias.length === 1 ? r.noticias[0].title : `${r.noticias[0].title} e mais ${r.noticias.length - 1}`, link: LINK_NOVIDADES });
   } catch (e) { console.error('relatórios falharam:', e.message); process.exitCode = 1; }
 
-  if (apiKey) {
+  // notícias por RSS (feeds de fontes.json) + 1 triagem do Gemini a cada 2 h
+  try {
+    const c = await coletar(db);
+    console.log(c.log);
+    const t = await triar(db, apiKey);
+    console.log(t.log);
+    if (t.publicadas.length) {
+      mudou = true;
+      avisos.push({ title: 'Novidades do cenário', body: t.publicadas.length === 1 ? t.publicadas[0] : `${t.publicadas[0]} e mais ${t.publicadas.length - 1}`, link: LINK_NOVIDADES });
+    }
+  } catch (e) { console.error('notícias (rss) falharam:', e.message); process.exitCode = 1; }
+
+  // pesquisa antiga direto no Gemini com Google Search: desligada (ligue com a variável BUSCA_GEMINI=1)
+  if (apiKey && process.env.BUSCA_GEMINI === '1') {
     try {
       const n = await noticias(db, apiKey);
       console.log(n.log);
       if (n.publicadas.length) mudou = true;
-      if (n.publicadas.length) avisos.push({ title: 'Novidades do cenário',
-        body: n.publicadas.length === 1 ? n.publicadas[0] : `${n.publicadas.length} novidades: ${n.publicadas[0]} e mais`, link: LINK_NOVIDADES });
     } catch (e) {
-      // cota grátis do Gemini esgotada ou modelo sobrecarregado: não é falha, tenta de novo na próxima rodada
-      if (/(429|503)|quota|RESOURCE_EXHAUSTED|UNAVAILABLE|high demand/i.test(e.message)) console.warn('notícias: Gemini sem cota agora, tenta na próxima rodada.', e.message.slice(0, 160));
+      if (/(429|503)|quota|RESOURCE_EXHAUSTED|UNAVAILABLE|high demand/i.test(e.message)) console.warn('notícias: Gemini sem cota agora.', e.message.slice(0, 160));
       else { console.error('notícias falharam:', e.message); process.exitCode = 1; }
     }
-  } else console.log('notícias: sem GEMINI_API_KEY, pulando');
+  }
 
   try {
     const v = await videos(db);
