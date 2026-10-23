@@ -1,0 +1,9 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-10-23T12:00:00-03:00","backfillCharacters":["arjun","jp","juri"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"Coosco divulga tier list de Street Fighter 6 para a Season 4","url":"https://www.eventhubs.com/news/2026/oct/23/coosco-tiers-sf6-season-4/","date":"2026-10-23","summary":"O jogador Coosco publicou sua tier list da Season 4 do SF6. Ryu, Blanka, Mai, Sagat, Luke, JP e Terry aparecem no tier S, com Ryu como o mais forte. Marisa, E. Honda e Yasmine ficam entre os últimos. A lista não inclui Arjun.","source":"EventHubs","kind":"cenario","characterIds":[]},
+{"title":"Psycho assina com a Bandits Gaming após período como free agent","url":"https://dashfight.com/news/psycho-signs-with-bandits-gaming-after-free-agency-9333","date":"2026-10-23","summary":"A Bandits Gaming anunciou a contratação de Psycho, jogador de Kimberly da América do Norte. Ele também integra o elenco da Bandits na Street Fighter League USA 2026, que começou em 23 de outubro, com playoffs e final em 8 de novembro.","source":"DashFight","kind":"comunidade","characterIds":["kimberly"]}
+],
+"sourcesChecked":["https://dashfight.com/news","https://www.eventhubs.com/news/","https://www.eventhubs.com/news/2026/oct/23/coosco-tiers-sf6-season-4/","https://dashfight.com/news/psycho-signs-with-bandits-gaming-after-free-agency-9333","https://www.eventhubs.com/news/2026/oct/19/arjun-counterplay-guide-broski-sf6/","https://allthings.how/arjun-joins-street-fighter-6-what-the-year-4-update-adds/"],
+"noNewsReason":null}
