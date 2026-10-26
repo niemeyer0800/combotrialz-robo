@@ -1,0 +1,8 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-10-26T12:30:00-03:00","backfillCharacters":["arjun","mai","manon"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"Red Dunes Esports é campeã da Street Fighter League EMEAA","url":"https://dashfight.com/news/red-dunes-esports-crowned-street-fighter-league-emeaa-champions-9338","date":"2026-10-26","summary":"A Red Dunes Esports venceu a Street Fighter League EMEAA. Segundo o Dashfight, Phenom chega ao quarto título seguido, por times diferentes.","source":"Dashfight","kind":"torneio","characterIds":[]},
+{"title":"Bandits Gaming lidera a SFL USA na metade da temporada","url":"https://dashfight.com/news/bandits-gaming-lead-sfl-usa-at-the-midpoint-of-the-season-9340","date":"2026-10-26","summary":"A Bandits Gaming lidera a Street Fighter League USA no ponto médio da temporada, que entra em pausa antes da sequência de partidas.","source":"Dashfight","kind":"torneio","characterIds":[]}
+],
+"sourcesChecked":["https://www.eventhubs.com/news/","https://dashfight.com/news","https://www.streetfighter.com/6/buckler/en/battle_change (403)"],"noNewsReason":null}
