@@ -1,0 +1,9 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-10-29T12:30:00-03:00","backfillCharacters":["arjun","sagat","terry"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"Vídeos dos melhores jogadores de Arjun no Ranked do SF6","url":"https://www.eventhubs.com/news/2026/oct/28/gameplay-footage-best-arjun-sf6/","date":"2026-10-28","summary":"O EventHubs publicou partidas ranqueadas de Hikaru, Kazunoko e Kido com Arjun contra Luke, Dhalsim, C. Viper, Zangief e Akuma, enviadas pelo canal SF6 High Level Replays. Segundo o texto, Kido ultrapassou Hikaru como o jogador de Arjun mais bem colocado no ranking. O texto também cita um guia de como enfrentar o Arjun feito por Broski.","source":"EventHubs","kind":"personagem","characterIds":["arjun"]},
+{"title":"Ator do Zangief diz que o elenco do filme de Street Fighter assinou contrato para 3 filmes","url":"https://www.eventhubs.com/news/2026/oct/27/contract-three-street-fighter-movie/","date":"2026-10-27","summary":"Olivier Richters, que interpretou Zangief no filme, escreveu num comentário no YouTube (25/10) que todos os atores, ele incluído, assinaram para 3 filmes e que Zangief terá mais destaque numa eventual sequência. O EventHubs ressalta que isso não confirma uma sequência.","source":"EventHubs","kind":"cenario","characterIds":["zangief"]}
+],
+"sourcesChecked":["https://dashfight.com/news","https://www.eventhubs.com/news/street-fighter-6/","https://www.eventhubs.com/news/2026/oct/28/gameplay-footage-best-arjun-sf6/","https://www.eventhubs.com/news/2026/oct/27/contract-three-street-fighter-movie/","https://www.eventhubs.com/news/2026/oct/26/street-fighter-box-office-disaster/","https://eventhubs.com/news/2025/aug/06/sf6-sagat-combo-video","https://www.eventhubs.com/news/2024/sep/10/sf6-modern-controls-terry"],
+"noNewsReason":null}
