@@ -1,0 +1,10 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-11-02T12:45:00-03:00","backfillCharacters":["arjun","blanka","cammy"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"Vxbao se classifica para a Capcom Cup 13 jogando de Arjun","url":"https://www.eventhubs.com/news/2026/nov/01/sf6-arjun-capcom-cup/","date":"2026-11-01","summary":"O jogador chinês Vxbao (AG), conhecido por jogar com vários personagens, principalmente M. Bison, venceu a seletiva da China no World Warrior jogando na maior parte do tempo de Arjun, lançado cerca de duas semanas e meia antes. A Capcom Cup 13 acontece em março, em Tóquio, com 48 jogadores.","source":"EventHubs","kind":"torneio","characterIds":["arjun","mbison"]},
+{"title":"Hurricane e mais quatro jogadores garantem vaga na Capcom Cup 13","url":"https://dashfight.com/news/hurricane-makes-history-as-5-moore-players-qualify-for-capcom-cup-13-9363","date":"2026-11-02","summary":"Cinco jogadores se classificaram no fim de semana pelo World Warrior: Hurricane (África do Sul), Bryzee (Europa Ocidental, de Ryu), Brayan_Job (Brasil), DestroyGodz (América Central Oeste) e Vxbao (China). Restam 8 das 48 vagas; as finais regionais restantes vão de 15 de novembro a 13 de dezembro.","source":"DashFight","kind":"torneio","characterIds":["ryu","arjun","mbison"]},
+{"title":"Evo divulga o Top 20 jogadores de SF6 de 2025","url":"https://dashfight.com/news/mena-rd-blaz-le-shar-lead-evo-s-top-20-street-fighter-6-pros-of-2025-9362","date":"2026-10-30","summary":"A Evo publicou o ranking dos 20 melhores jogadores de Street Fighter 6 de 2025: MenaRD em 1º (campeão do Evo Japan e do Evo Las Vegas de 2025), Blaz em 2º e LeShar em 3º. Japoneses são 12 dos 20 nomes.","source":"DashFight","kind":"cenario","characterIds":[]}
+],
+"sourcesChecked":["https://www.eventhubs.com/news/street-fighter-6/","https://dashfight.com/news","https://allthings.how/?p=287004","https://www.sportskeeda.com/esports/street-fighter-6-cammy-complete-combo-guide-bnb-drive-punish-counters","https://srk.shib.live/w/Street_Fighter_6/Blanka/Combos"],
+"noNewsReason":null}
