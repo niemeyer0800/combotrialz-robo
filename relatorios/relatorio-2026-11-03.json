@@ -1,0 +1,187 @@
+{
+ "schema": "combotrialz/report@1",
+ "checkedAt": "2026-11-03T12:00:00-03:00",
+ "backfillCharacters": [
+  "arjun",
+  "chunli",
+  "cviper"
+ ],
+ "patch": {
+  "changed": false,
+  "version": null,
+  "date": null,
+  "url": null,
+  "summary": null,
+  "affectedCharacters": []
+ },
+ "proposals": [
+  {
+   "type": "new_combo",
+   "combo": {
+    "characterId": "chunli",
+    "controls": "modern",
+    "notation": "2M > DRC > 5M > 4H",
+    "title": "Confirm básico com Drive Rush (Modern)",
+    "category": "confirm_medio",
+    "position": "qualquer",
+    "situations": [
+     "max_dano"
+    ],
+    "optimalWhen": "Confirm de médio no dia a dia, com 1 barra de Drive.",
+    "damage": null,
+    "drive": null,
+    "superBars": null,
+    "supers": [],
+    "ca": false,
+    "extra": null,
+    "difficulty": null,
+    "endsWith": null
+   },
+   "targetComboId": null,
+   "notes": "Original da fonte: \"Forward/Back/Down + Medium > Drive Rush Cancel > Medium > Back + Heavy\" (a fonte também cita Stance > Stance Light > Medium Spinning Bird Kick e diz que dá cerca de 2100 a 2500; dano não exato, por isso null). Fonte anterior ao patch atual: a verificar.",
+   "sources": [
+    {
+     "url": "https://note.com/mars_gaming/n/n5499ddcf3e85?hl=en",
+     "title": "STREET FIGHTER 6 [Vol.05 4 Combos for Platinum Modern Chun-Li] — マーズ",
+     "publishedAt": "2024-07-24"
+    }
+   ],
+   "confidence": "media"
+  },
+  {
+   "type": "new_combo",
+   "combo": {
+    "characterId": "chunli",
+    "controls": "modern",
+    "notation": "5M > AM > M SBK",
+    "title": "Sem Drive com assist (Modern)",
+    "category": "confirm_leve",
+    "position": "qualquer",
+    "situations": [
+     "sem_recursos",
+     "economiza_drive"
+    ],
+    "optimalWhen": "Sem Drive disponível; começa segurando para baixo logo após o médio.",
+    "damage": null,
+    "drive": null,
+    "superBars": null,
+    "supers": [],
+    "ca": false,
+    "extra": null,
+    "difficulty": null,
+    "endsWith": null
+   },
+   "targetComboId": null,
+   "notes": "Original: \"Medium (start holding down immediately) > Assist+Medium > Medium Spinning Bird Kick\". Fonte anterior ao patch atual: a verificar.",
+   "sources": [
+    {
+     "url": "https://note.com/mars_gaming/n/n5499ddcf3e85?hl=en",
+     "title": "STREET FIGHTER 6 [Vol.05 4 Combos for Platinum Modern Chun-Li] — マーズ",
+     "publishedAt": "2024-07-24"
+    }
+   ],
+   "confidence": "media"
+  },
+  {
+   "type": "new_combo",
+   "combo": {
+    "characterId": "chunli",
+    "controls": "modern",
+    "notation": "6H > 4H > Stance > Stance M > H Tensho",
+    "title": "Punish Counter pesado (Modern)",
+    "category": "punish_counter",
+    "position": "qualquer",
+    "situations": [
+     "max_dano"
+    ],
+    "optimalWhen": "Após 6H em Punish Counter.",
+    "damage": null,
+    "drive": null,
+    "superBars": null,
+    "supers": [],
+    "ca": false,
+    "extra": null,
+    "difficulty": null,
+    "endsWith": null
+   },
+   "targetComboId": null,
+   "notes": "Original: \"Forward+Heavy (Punish Counter) > Back+Heavy > Stance > Stance Medium > Heavy Tensho Kicks\". Fonte anterior ao patch atual: a verificar.",
+   "sources": [
+    {
+     "url": "https://note.com/mars_gaming/n/n5499ddcf3e85?hl=en",
+     "title": "STREET FIGHTER 6 [Vol.05 4 Combos for Platinum Modern Chun-Li] — マーズ",
+     "publishedAt": "2024-07-24"
+    }
+   ],
+   "confidence": "media"
+  },
+  {
+   "type": "new_combo",
+   "combo": {
+    "characterId": "chunli",
+    "controls": "modern",
+    "notation": "2H > H Lightning Legs > H Tensho",
+    "title": "Combo de canto após 2H (Modern)",
+    "category": "finalizacao",
+    "position": "canto",
+    "situations": [
+     "max_dano"
+    ],
+    "optimalWhen": "Oponente no canto, após 2H ou 2H de assist.",
+    "damage": null,
+    "drive": null,
+    "superBars": null,
+    "supers": [],
+    "ca": false,
+    "extra": null,
+    "difficulty": null,
+    "endsWith": null
+   },
+   "targetComboId": null,
+   "notes": "Original: \"Down + Heavy (or Assist Heavy) > Heavy Lightning Legs > Heavy Tensho Kicks\". Fonte anterior ao patch atual: a verificar.",
+   "sources": [
+    {
+     "url": "https://note.com/mars_gaming/n/n5499ddcf3e85?hl=en",
+     "title": "STREET FIGHTER 6 [Vol.05 4 Combos for Platinum Modern Chun-Li] — マーズ",
+     "publishedAt": "2024-07-24"
+    }
+   ],
+   "confidence": "media"
+  }
+ ],
+ "news": [
+  {
+   "title": "Breakdown do Legend Rank do Act 13 coloca Luke em 1º e C. Viper em 2º",
+   "url": "https://www.eventhubs.com/news/2026/nov/03/street-fighter-6-legend-rank/",
+   "date": "2026-11-03",
+   "summary": "Segundo levantamento compartilhado por Kakuhan, Luke lidera o Legend Rank ao fim do Act 13, com 31 jogadores, seguido de C. Viper (29). Arjun aparece em 7º, com 21 jogadores. O Act 14 começou e o MR foi resetado.",
+   "source": "EventHubs",
+   "kind": "cenario",
+   "characterIds": [
+    "luke",
+    "cviper",
+    "arjun"
+   ]
+  },
+  {
+   "title": "Capcom Pro Tour 2026: resultados parciais das finais regionais do World Warrior",
+   "url": "https://www.eventhubs.com/news/2026/oct/02/cpt-world-warrior-finals-results/",
+   "date": "2026-11-01",
+   "summary": "Em 18 das 25 regiões já há classificado. Em 1º de novembro, AG|Vxbao (Arjun, M. Bison) garantiu a vaga pela China; em 31 de outubro saíram Bryzee (Europa Oeste), Wolves|Hurricane (África do Sul), 2G|BrayanJob (Brasil) e DestroyGodz (América Central Oeste). Orientações restantes: Oriente Médio em 14/11, EUA/Canadá Oeste em 15/11.",
+   "source": "EventHubs",
+   "kind": "torneio",
+   "characterIds": []
+  }
+ ],
+ "sourcesChecked": [
+  "https://note.com/mars_gaming/n/n5499ddcf3e85?hl=en",
+  "https://www.eventhubs.com/news/street-fighter-6/",
+  "https://www.eventhubs.com/news/2026/nov/03/street-fighter-6-legend-rank/",
+  "https://www.eventhubs.com/news/2026/oct/02/cpt-world-warrior-finals-results/",
+  "https://www.eventhubs.com/news/2026/oct/23/sfl-americas-2026-results/",
+  "https://www.thegamer.com/street-fighter-6-chun-li-beginner-strategy-tips-guide/",
+  "https://gamerant.com/street-fighter-6-sf6-chun-li-guide-move-list-combos-tips-counters/",
+  "https://dashfight.com/news"
+ ],
+ "noNewsReason": null
+}
