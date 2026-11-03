@@ -789,6 +789,34 @@
    "status": "fonte"
   },
   {
+   "id": "chunli-m-2d1f7701",
+   "characterId": "chunli",
+   "controls": "modern",
+   "notation": "2H > H Lightning Legs > H Tensho",
+   "status": "a_verificar"
+  },
+  {
+   "id": "chunli-m-a9f05751",
+   "characterId": "chunli",
+   "controls": "modern",
+   "notation": "2M > DRC > 5M > 4H",
+   "status": "a_verificar"
+  },
+  {
+   "id": "chunli-m-868e56ec",
+   "characterId": "chunli",
+   "controls": "modern",
+   "notation": "5M > AM > M SBK",
+   "status": "a_verificar"
+  },
+  {
+   "id": "chunli-m-4f35c48f",
+   "characterId": "chunli",
+   "controls": "modern",
+   "notation": "6H > 4H > Stance > Stance M > H Tensho",
+   "status": "a_verificar"
+  },
+  {
    "id": "cviper-c-e2768542",
    "characterId": "cviper",
    "controls": "classic",
@@ -3342,6 +3370,18 @@
    "removed": false
   },
   {
+   "url": "https://www.eventhubs.com/news/2026/nov/03/street-fighter-6-legend-rank/",
+   "title": "Breakdown do Legend Rank do Act 13 coloca Luke em 1º e C. Viper em 2º",
+   "publishedAt": "2026-11-03",
+   "removed": false
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBoNEN2NGpyU3JXd3otbW5YS000Vlp2dkl0MDNTaGtDYTdJWm9LVzQzYkZJZFRzWlZSM0g5cDdwS3BTNkhzamJDT3BkNHZlRWRaQkVLSVZkTnNDeWhMTWk2YlZ2eWZ3N1BNdTNlTll5cmpRZFNxTjFuX0Z3ajg?oc=5",
+   "title": "Quebra de ranking Lendário do Ato 13 de SF6 tem campeão de volta, C. Viper em 2º e Arjun perto do top 5",
+   "publishedAt": "2026-11-03",
+   "removed": false
+  },
+  {
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ0RybTBJTjAzWjRKcTFVR0k0eHVmWVNpR2p6SkJUQkNlZVB5NkpvOWhrOHlLcWpvMFN2c3EycXVkelhYcVd5OFAxRlRNYjl0UlRRWjh0SmxDUUctZkxQQVYzMUtsVDJpODE3WkFiS0gxUGwtM2REN2pwRF94SUxDa2JPUQ?oc=5",
    "title": "O Punho Penitente de Arjun em Street Fighter 6",
    "publishedAt": "2026-11-02",
@@ -3356,6 +3396,12 @@
   {
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNV9GbGFuWE5kX3VMT1cyN2hwbjBUeEFhaE1UMTJkOHBtODBNVkttODlkUm9sbzBnaFdDSzRZNTFpUXVBbkxULWpxNkR2YTVJdGNHajZna2dDREFfLVd5UlJZUzE4N29qV0M5MTdPeV9kZEZIenBPNTVtcnJBLThyQ0hjTEFRSUxnTzZMUm10YklMMzVNQ3N6UEdRSl9CX2M4OHc?oc=5",
    "title": "Hurricane Faz História com 5 Jogadores Qualificados para a Capcom Cup 13",
+   "publishedAt": "2026-11-02",
+   "removed": false
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrMXFCajh5Vi10dWtBekFZbUphWjduZDc5NXVQQzBHVnk5WmQwMkprNmEwTUpfOG9LMWI0UmlzcjFxWUpvWkhaMGVISFdTNVdGVklfZjY0cGRIZDZy?oc=5",
+   "title": "Street Fighter 6: Green Hill Zone",
    "publishedAt": "2026-11-02",
    "removed": false
   },
@@ -3380,6 +3426,12 @@
   {
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVnF0X2xOV19aQnJIOE1yRWZ3QmxNbDNIbFVoekVjZko1NmRQYUh5cXZRaUp2OTNiX0h3bjZsbU9aeklSWVFyamx1MFZBa3FyZnMwWXUwT1hZQVNjSmFEc2lqU3ItSVM3VWgzbUN3N3ZIbmRGZVlHOGlGWHZTOGc5ZmVn?oc=5",
    "title": "Fatal Fury Retorna à Esports World Cup 2027",
+   "publishedAt": "2026-11-01",
+   "removed": false
+  },
+  {
+   "url": "https://www.eventhubs.com/news/2026/oct/02/cpt-world-warrior-finals-results/",
+   "title": "Capcom Pro Tour 2026: resultados parciais das finais regionais do World Warrior",
    "publishedAt": "2026-11-01",
    "removed": false
   },
