@@ -1,0 +1,8 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-11-17T12:30:00-03:00","backfillCharacters":["arjun","alex","blanka"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"Kinotrope entra no esports de Street Fighter 6 com a contratação de Haitei","url":"https://dashfight.com/news/kinotrope-enters-street-fighter-6-esports-with-signing-of-haitei-9419","date":"2026-11-17","summary":"A organização Kinotrope entrou no cenário competitivo de SF6 ao contratar o jogador Haitei.","source":"dashfight.com","kind":"comunidade","characterIds":[]},
+{"title":"TGU 2026: NYChrisG (Chun-Li) vence o SF6 em Pak Kret, na Tailândia","url":"https://www.eventhubs.com/news/2026/nov/13/tgu-2026-results/","date":"2026-11-15","summary":"No TGU 2026, em Pak Kret (Tailândia), NYChrisG (Chun-Li) ficou em 1º no SF6, seguido de b3lLz (Lily) em 2º e XiaoZhai (Cammy) em 3º. O evento teve mais de 160 inscritos no SF6.","source":"eventhubs.com","kind":"torneio","characterIds":["chunli","lily","cammy"]}
+],
+"sourcesChecked":["https://allthings.how/street-fighter-6-arjun-combo-guide-starter-to-corner-routes/","https://www.eventhubs.com/news/","https://dashfight.com/news","https://srk.shib.live/w/Street_Fighter_6/Blanka/Combos","https://www.sportskeeda.com/esports/street-fighter-6-blanka-complete-combo-guide-bnb-drive-punish-counters"],"noNewsReason":null}
