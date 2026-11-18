@@ -1,0 +1,8 @@
+{"schema":"combotrialz/report@1","checkedAt":"2026-11-18T09:00:00-03:00","backfillCharacters":["arjun","blanka","cammy"],
+"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
+"proposals":[],
+"news":[
+{"title":"ONIC|NYChrisG (Chun-Li) vence o TGU 2026","url":"https://www.eventhubs.com/news/2026/nov/13/tgu-2026-results/","date":"2026-11-15","summary":"O Thaiger Uppercut (TGU) 2026, em Pak Kret, Tailândia, terminou com ONIC|NYChrisG (Chun-Li) campeão, vencendo b3lLz (Lily) por 3-1 nas duas sets da grande final. GTW|XiaoZhai (Cammy) ficou em 3º e Music4friends (Kimberly) em 4º.","source":"EventHubs","kind":"torneio","characterIds":["chunli","lily","cammy","kimberly"]}
+],
+"sourcesChecked":["https://www.streetfighter.com/6/buckler/en/battle_change (403)","https://www.eventhubs.com/news/","https://www.eventhubs.com/news/2026/nov/13/tgu-2026-results/","https://www.eventhubs.com/news/2026/oct/02/cpt-world-warrior-finals-results/","https://www.sportskeeda.com/esports/street-fighter-6-cammy-complete-combo-guide-bnb-drive-punish-counters (403)","https://www.sportskeeda.com/esports/street-fighter-6-blanka-complete-combo-guide-bnb-drive-punish-counters (403)","https://dashfight.com/ (timeout)"],
+"noNewsReason":null}
