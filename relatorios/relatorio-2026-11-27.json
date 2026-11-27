@@ -1,9 +1,37 @@
-{"schema":"combotrialz/report@1","checkedAt":"2026-11-27T09:00:00-03:00","backfillCharacters":["arjun","mai","manon"],
-"patch":{"changed":false,"version":null,"date":null,"url":null,"summary":null,"affectedCharacters":[]},
-"proposals":[],
-"news":[
-{"title":"Semy28 garante primeira vaga na Capcom Cup 13 ao vencer a final regional da Alemanha","url":"https://dashfight.com/news/semy-28-secures-first-capcom-cup-appearance-with-world-warrior-victory-9435","date":"2026-11-23","summary":"O alemão Semy28, jogador de Ryu, venceu Chico na final do World Warrior Regional da Alemanha e se classificou pela primeira vez para a Capcom Cup 13. O próximo evento, o quinto World Warrior do Japão, acontece em 29 de novembro de 2026 e define duas vagas japonesas.","source":"DashFight","kind":"torneio","characterIds":["ryu"]},
-{"title":"Evo Japan 2027 anuncia a line-up do palco principal","url":"https://dashfight.com/news/evo-japan-2027-announces-official-main-stage-lineup-9441","date":"2026-11-24","summary":"O Evo Japan 2027 acontece de 29 de abril a 1º de maio de 2027, em Tóquio. O palco principal terá Street Fighter 6, Tekken 8, Guilty Gear -Strive-, Fatal Fury: City of the Wolves, Marvel Tokon: Fighting Souls, Virtua Fighter 5 R.E.V.O. e Granblue Fantasy Versus: Rising.","source":"DashFight","kind":"torneio","characterIds":[]},
-{"title":"GamerBee anuncia saída do Flash Wolves e segue como agente livre","url":"https://dashfight.com/news/street-fighter-veteran-gamer-bee-announces-departure-from-flash-wolves-9450","date":"2026-11-26","summary":"O veterano taiwanês GamerBee (Bruce Hsiang) anunciou que deixou o time Flash Wolves, cujo contrato terminou em outubro, e continua na cena de jogos de luta como agente livre.","source":"DashFight","kind":"cenario","characterIds":[]}
-],
-"sourcesChecked":["https://www.streetfighter.com/6/buckler/en/battle_change","https://dashfight.com/sf6","https://allthings.how/street-fighter-6-arjun-combo-guide-starter-to-corner-routes/","https://www.shacknews.com/article/150227/street-fighter-6-year-4-yasmine-reaction","https://www.sportskeeda.com/esports/street-fighter-6-manon-complete-combo-guide-bnb-drive-punish-counters"],"noNewsReason":null}
+{
+ "schema": "combotrialz/report@1",
+ "checkedAt": "2026-11-27T09:00:00-03:00",
+ "backfillCharacters": [
+  "arjun",
+  "mai",
+  "manon"
+ ],
+ "patch": {
+  "changed": false,
+  "version": null,
+  "date": null,
+  "url": null,
+  "summary": null,
+  "affectedCharacters": []
+ },
+ "proposals": [],
+ "news": [
+  {
+   "title": "GamerBee anuncia saída do Flash Wolves e segue como agente livre",
+   "url": "https://dashfight.com/news/street-fighter-veteran-gamer-bee-announces-departure-from-flash-wolves-9450",
+   "date": "2026-11-26",
+   "summary": "O veterano taiwanês GamerBee (Bruce Hsiang) anunciou que deixou o time Flash Wolves, cujo contrato terminou em outubro, e continua na cena de jogos de luta como agente livre.",
+   "source": "DashFight",
+   "kind": "cenario",
+   "characterIds": []
+  }
+ ],
+ "sourcesChecked": [
+  "https://www.streetfighter.com/6/buckler/en/battle_change",
+  "https://dashfight.com/sf6",
+  "https://allthings.how/street-fighter-6-arjun-combo-guide-starter-to-corner-routes/",
+  "https://www.shacknews.com/article/150227/street-fighter-6-year-4-yasmine-reaction",
+  "https://www.sportskeeda.com/esports/street-fighter-6-manon-complete-combo-guide-bnb-drive-punish-counters"
+ ],
+ "noNewsReason": null
+}
